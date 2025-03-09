@@ -1,4 +1,5 @@
-
+import 'react'
+import { Footer } from './components/footer'
 import './App.css'
 
 function App() {
@@ -6,11 +7,11 @@ function App() {
   return (
     <>
       <div>
-       
+        <home />
       </div>
-      
+      <Footer />
     </>
-  )
+    )
 }
 
 export default App
