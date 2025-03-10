@@ -1,16 +1,19 @@
+// Date: 2021/05/17
+// Creator: Brayan stid cortes lombana
+// Description: va el componente principal de la aplicacion
 
-import './App.css'
 
-function App() {
+import Header from './components/header';
+import Section from './components/section';
+import Footer from './components/footer';
+import './index.css';
 
-  return (
-    <>
-      <div>
-       
-      </div>
-      
-    </>
-  )
-}
+const App = () => (
+  <div>
+    <Header />
+    <Section />
+    <Footer />
+  </div>
+);
 
-export default App
+export default App;
