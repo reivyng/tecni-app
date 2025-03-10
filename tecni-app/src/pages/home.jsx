@@ -1,26 +1,11 @@
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-
 import 'react';
 import images from '../assets/images';
-import SimpleImageCarousel from '../components/carrucel';
+import Carousel from '../components/carrucel';
 
 const Home = () => {
-  // Define las imágenes para el carrusel
-  const carouselImages = [
-    { 
-      src: images.image, 
-      alt: "TECNIApp servicio de refrigeración" 
-    },
-    { 
-      src: images.service, 
-      alt: "Instalación de aire acondicionado" 
-    },
-    { 
-      src: images.logo, 
-      alt: "Mantenimiento de equipos" 
-    },
-  ];
+  
 
   return (
     <>
@@ -54,7 +39,7 @@ const Home = () => {
       </section>
       
       <section className="flex items-center justify-center min-h-screen p-4 bg-white font-roboto">
-        <SimpleImageCarousel images={carouselImages} />
+        <Carousel />
       </section>
 
     </>

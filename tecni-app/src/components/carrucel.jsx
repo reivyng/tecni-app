@@ -1,74 +1,56 @@
-import { useState, useEffect } from 'react';
-import  'react';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import images from "../assets/images";
 
+const Carousel = () => {
+  // Define las imágenes para el carrusel
+  const carouselImages = [
+    { 
+      src: images.image, 
+      alt: "TECNIApp servicio de refrigeración" 
+    },
+    { 
+      src: images.service, 
+      alt: "Instalación de aire acondicionado" 
+    },
+    { 
+      src: images.logo, 
+      alt: "Mantenimiento de equipos" 
+    },
+  ];
 
-const SimpleImageCarousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  
-  // Auto-scroll functionality - change slide every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, [images.length]);
-  
-  // Navigation functions
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+  const [index, setIndex] = useState(1);
+
+  const nextImage = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
   };
-  
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+
+  const prevImage = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + carouselImages.length) % carouselImages.length);
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto">
-      {/* Main image container */}
-      <div className="relative h-64 overflow-hidden rounded-lg md:h-80">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-              index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-            }`}
-          >
-            <img
-              src={image.src}
-              alt={image.alt || `Imagen ${index + 1}`}
-              className="object-contain w-full h-full"
-            />
-          </div>
-        ))}
-        
-        {/* Side navigation buttons */}
-        <button
-          onClick={goToPrevious}
-          className="absolute z-20 p-2 transform -translate-y-1/2 rounded-full shadow-md left-2 top-1/2 bg-white/70 hover:bg-white"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        <button
-          onClick={goToNext}
-          className="absolute z-20 p-2 transform -translate-y-1/2 rounded-full shadow-md right-2 top-1/2 bg-white/70 hover:bg-white"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
+    <div className="relative flex items-center justify-center mt-4 space-x-1 w-80">
+      <button onClick={prevImage} className="absolute left-0 z-10 p-2 text-white bg-blue-900 rounded-full">❮</button>
+      {[index - 1, index, (index + 1) % carouselImages.length].map((i, pos) => (
+        <motion.img
+          key={i}
+          src={carouselImages[(i + carouselImages.length) % carouselImages.length].src}
+          alt={carouselImages[(i + carouselImages.length) % carouselImages.length].alt}
+          className={`rounded-lg cursor-pointer transition-all duration-500 ${
+            pos === 1 ? "w-40 h-40 border-4 border-blue-900 shadow-xl shadow-blue-500" : "w-28 h-28 opacity-50"
+          }`}
+          animate={{
+            scale: pos === 1 ? 1.2 : 1,
+            opacity: pos === 1 ? 1 : 0.5,
+            x: pos === 0 ? -40 : pos === 2 ? 40 : 0
+          }}
+          transition={{ duration: 0.5 }}
+        />
+      ))}
+      <button onClick={nextImage} className="absolute right-0 z-10 p-2 text-white bg-blue-900 rounded-full">❯</button>
     </div>
   );
 };
 
-export default SimpleImageCarousel;
+export default Carousel;
