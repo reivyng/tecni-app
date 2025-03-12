@@ -4,6 +4,7 @@ import images from "../assets/images";
 
 const Carousel = () => {
   // Define las imágenes para el carrusel
+  
   const carouselImages = [
     { 
       src: images.publicidad, 
@@ -26,7 +27,7 @@ const Carousel = () => {
       src: images.publicidad5, 
       alt: "Publicidad" 
     },
-  ];
+    ];
 
   const [index, setIndex] = useState(1);
 
