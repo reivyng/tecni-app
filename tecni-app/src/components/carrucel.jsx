@@ -1,25 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import images from "../assets/images";
 
 const Carousel = () => {
   // Define las imágenes para el carrusel
+  
   const carouselImages = [
     { 
-      src: images.image, 
-      alt: "TECNIApp servicio de refrigeración" 
+      src: images.publicidad, 
+      alt: "Publicidad" 
     },
     { 
-      src: images.service, 
-      alt: "Instalación de aire acondicionado" 
+      src: images.publicidad2, 
+      alt: "Publicidad" 
     },
     { 
-      src: images.logo, 
-      alt: "Mantenimiento de equipos" 
+      src: images.publicidad3,
+      alt: "Publicidad" 
+      
     },
-  ];
+    { 
+      src: images.publicidad4, 
+      alt: "Publicidad" 
+    },
+    { 
+      src: images.publicidad5, 
+      alt: "Publicidad" 
+    },
+    ];
 
   const [index, setIndex] = useState(1);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const nextImage = () => {
     setIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
@@ -29,16 +40,52 @@ const Carousel = () => {
     setIndex((prevIndex) => (prevIndex - 1 + carouselImages.length) % carouselImages.length);
   };
 
+  // Efecto para el autoplay
+  useEffect(() => {
+    let intervalId;
+    
+    if (isAutoPlaying) {
+      intervalId = setInterval(() => {
+        nextImage();
+      }, 5000); // Cambia cada 5 segundos
+    }
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [isAutoPlaying]);
+
+  // Manejadores para pausar/reanudar en hover
+  const handleMouseEnter = () => {
+    setIsAutoPlaying(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsAutoPlaying(true);
+  };
+
   return (
-    <div className="relative flex items-center justify-center mt-4 space-x-1 w-80">
-      <button onClick={prevImage} className="absolute left-0 z-10 p-2 text-white bg-blue-900 rounded-full">❮</button>
+    <div 
+      className="relative flex items-center justify-center mt-4 space-x-1 w-120 h-200"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button 
+        onClick={prevImage} 
+        className="absolute z-10 p-2 text-white bg-blue-900 rounded-full left-1 w-15 hover:bg-blue-700 transition-colors"
+      >
+        ❮
+      </button>
+      
       {[index - 1, index, (index + 1) % carouselImages.length].map((i, pos) => (
         <motion.img
           key={i}
           src={carouselImages[(i + carouselImages.length) % carouselImages.length].src}
           alt={carouselImages[(i + carouselImages.length) % carouselImages.length].alt}
           className={`rounded-lg cursor-pointer transition-all duration-500 ${
-            pos === 1 ? "w-40 h-40 border-4 border-blue-900 shadow-xl shadow-blue-500" : "w-28 h-28 opacity-50"
+            pos === 1 ? "w-40 h-55 shadow-xl shadow-yellow-600" : "w-28 h-35 opacity-50"
           }`}
           animate={{
             scale: pos === 1 ? 1.2 : 1,
@@ -48,7 +95,15 @@ const Carousel = () => {
           transition={{ duration: 0.5 }}
         />
       ))}
-      <button onClick={nextImage} className="absolute right-0 z-10 p-2 text-white bg-blue-900 rounded-full">❯</button>
+      
+      <button 
+        onClick={nextImage} 
+        className="absolute right-0 z-10 p-2 text-white bg-blue-900 rounded-full w-15 hover:bg-blue-700 transition-colors"
+      >
+        ❯
+      </button>
+
+     
     </div>
   );
 };

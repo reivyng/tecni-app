@@ -2,7 +2,7 @@
 // Creator: Brayan stid cortes lombana
 // Description: va el componente principal de la aplicacion
 
-import React from 'react';
+import  'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 
