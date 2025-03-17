@@ -5,6 +5,7 @@ import publicidad2 from './publicidad/2.png';
 import publicidad3 from './publicidad/3.png';
 import publicidad4 from './publicidad/4.png';
 import publicidad5 from './publicidad/5.png';
+import logoBlanco from './logoBlanco.png'
 
 
 const images = {
@@ -15,6 +16,7 @@ const images = {
     publicidad3,
     publicidad4,
     publicidad5,
+    logoBlanco,
 };
 
 export default images;
