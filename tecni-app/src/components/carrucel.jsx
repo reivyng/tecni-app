@@ -68,13 +68,13 @@ const Carousel = () => {
 
   return (
     <div 
-      className="relative flex items-center justify-center mt-4 space-x-1 w-120 h-200"
+      className="relative flex items-center justify-center mt-4 space-x w-full h-full"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <button 
         onClick={prevImage} 
-        className="absolute z-10 p-2 text-white bg-blue-900 rounded-full left-1 w-15 hover:bg-blue-700 transition-colors"
+        className="absolute z-10 p-2 text-xl text-white bg-blue-900 rounded-full left-12 hover:bg-blue-700 transition-colors"
       >
         ❮
       </button>
@@ -85,20 +85,20 @@ const Carousel = () => {
           src={carouselImages[(i + carouselImages.length) % carouselImages.length].src}
           alt={carouselImages[(i + carouselImages.length) % carouselImages.length].alt}
           className={`rounded-lg cursor-pointer transition-all duration-500 ${
-            pos === 1 ? "w-40 h-55 shadow-xl shadow-yellow-600" : "w-28 h-35 opacity-50"
+            pos === 1 ? "w-[220px] h-[300px] shadow-xl shadow-yellow-600" : "w-25 h-22 opacity-50"
           }`}
           animate={{
-            scale: pos === 1 ? 1.2 : 1,
+            scale: pos === 1 ? 1.1 : 0.9,
             opacity: pos === 1 ? 1 : 0.5,
-            x: pos === 0 ? -40 : pos === 2 ? 40 : 0
+            x: pos === 0 ? -60 : pos === 2 ? 60 : 0
           }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         />
       ))}
       
       <button 
         onClick={nextImage} 
-        className="absolute right-0 z-10 p-2 text-white bg-blue-900 rounded-full w-15 hover:bg-blue-700 transition-colors"
+        className="absolute right-12 z-10 p-2 text-xl text-white bg-blue-900 rounded-full hover:bg-blue-700 transition-colors"
       >
         ❯
       </button>
