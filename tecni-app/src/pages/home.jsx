@@ -12,7 +12,7 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4"
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-61" // 
       >
         <div className="flex flex-col md:flex-row items-center justify-between">
           <motion.img 
@@ -62,7 +62,8 @@ const Home = () => {
               soluciones eficientes y adaptadas a las necesidades de nuestros clientes.
             </motion.p>
           </div>
-          <div className="w-full max-w-lg mx-auto md:max-w-none">
+          <div className="w-full max-w-lg mx-auto md:max-w-none h-[500px] flex items-center justify-center"> 
+            {/* aumentado altura y añadido flex */}
             <Carousel />
           </div>
         </div>
@@ -73,18 +74,18 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-8"
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
       >
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-8 text-center"
+          className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-6 text-center"
         >
           ¿Quieres saber cómo lo hacemos?
         </motion.h2>
         
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-4 items-center">
           <motion.div 
             whileHover={{ scale: 1.02, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.5)" }}
             className="w-full lg:w-2/3 p-6 md:p-8 bg-[#A4B6CE] rounded-2xl shadow-lg border border-gray-100"
@@ -124,12 +125,12 @@ const Home = () => {
             whileInView={{ opacity: 1, x: 0 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
-            className="w-full lg:w-1/3 max-w-[400px]"
+            className="w-full lg:w-1/3 max-w-[400px] flex items-center"
           >
             <motion.img 
               src={images.service} 
               alt="Técnico trabajando en aire acondicionado" 
-              className="w-full rounded-2xl items-center shadow-lg object-cover h-[300px] top-32"
+              className="w-full rounded-2xl shadow-lg object-cover h-[300px]"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
@@ -149,15 +150,16 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block pb-1 text-2xl text-blue-900 border-b-2 border-blue-900"
+          className="inline-block pb-1 text-3xl text-blue-900 border-b-2 border-blue-900"
         >
+          
           Experiencia de la empresa
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="max-w-3xl mx-auto mt-5 text-lg text-gray-800"
+          className="max-w-6xl mx-auto mt-5 text-3xl text-gray-800"
         >
           Considerada hoy en día un Consorcio que se destaca por su innovación y sigue creciendo en la industria del aire acondicionado y la refrigeración, cuenta con profesionales con más de 16 años de experiencia en el área de la climatización y refrigeración.
         </motion.p>
