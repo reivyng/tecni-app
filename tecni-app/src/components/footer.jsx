@@ -38,14 +38,14 @@ export const Footer = () => {
           <h3 className="text-2xl font-semibold">Síguenos</h3>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/share/18886WVF2G/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="text-3xl text-black transition-all duration-300 fab fa-facebook hover:scale-110"></i>
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/tecniappneiva?igsh=MXNsYW54bjZzNmFpMQ=="
               target="_blank"
               rel="noopener noreferrer"
             >
