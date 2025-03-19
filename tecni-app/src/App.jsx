@@ -4,6 +4,7 @@
 
 import  'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './index.css';
 
 import Footer from './components/footer';
 import Home from './pages/home';
@@ -11,8 +12,7 @@ import Contact from './pages/contact';
 import About from './pages/about';
 import Services from './pages/services';
 import Projects from './pages/projects';
-import './index.css';
-import NavBar from './components/nav';
+import NavBar from './components/Nav';
 
 const App = () => (
   <Router>
