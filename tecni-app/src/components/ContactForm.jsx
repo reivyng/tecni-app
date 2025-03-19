@@ -1,5 +1,6 @@
 // src/components/ContactSection.jsx
 import { useState } from 'react';
+import contactImage from '../assets/images'; // Importar la imagen
 import { FaUser, FaEnvelope, FaPhone, FaComment } from 'react-icons/fa';
 
 const ContactSection = () => {
@@ -41,8 +42,12 @@ const ContactSection = () => {
 
   return (
     <div className="relative flex flex-col md:flex-row justify-between items-center p-12 mt-10 md:mt-40">
+      {/* Imagen */}
+      <div className="flex flex-col items-center md:items-start md:w-4/8">
+                <img src={contactImage.llave} alt="Contact Us" className="w-1/2 rounded-lg shadow-lg" />
+            </div>
       {/* Formulario */}
-      <div className="p-10 max-w-9x3 z-10 bg-white rounded-lg shadow-lg md:ml-115 w-200">
+      <div className="p-10 max-w-9x3 z-10 bg-white rounded-lg shadow-lg  w-300">
         <form onSubmit={handleSubmit}>
           <div className="mb-4 flex items-center">
             <FaUser className="mr-2 text-gray-500" />
@@ -95,7 +100,7 @@ const ContactSection = () => {
             type="submit"
             className="w-1/3 p-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors ml-16"
           >
-            Enviar Consulta
+            Enviar Mensaje
           </button>
         </form>
       </div>
@@ -116,6 +121,7 @@ const ContactSection = () => {
           title="Ubicación en Google Maps"
         ></iframe>
       </div>
+            
     </div>
   );
 };
