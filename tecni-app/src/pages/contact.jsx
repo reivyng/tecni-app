@@ -1,13 +1,85 @@
 import 'react';
-const contact = () => {
+import { FiPhone } from "react-icons/fi";
+import { GiSandsOfTime } from "react-icons/gi";
+import { MdOutlineAttachEmail } from "react-icons/md";
+import './css/styles.css'; // Asegúrate de que la ruta sea correcta
+import Header from '../components/ContactForm';
+
+const Contact = () => {
+    const gradientBackground = 'linear-gradient(to bottom, white, #A4B6CE)';
+    
     return (
-        <div>
-          
-            <main>
-                <h1>Contactanos</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel libero at neque tincidunt aliquet. Donec vel purus vel ipsum sagittis fermentum. Nullam fermentum, ipsum ac condimentum pellentesque, justo velit ultrices neque, ac consectetur neque neque vel nunc. Integer vel ex sed nunc luctus varius. Nulla facilisi. Nullam euismod, mi vel commodo convallis, velit purus consectetur neque, ac ultricies sapien mi vel justo.</p>
-            </main>
+        <div className="w-full py-6 mt-12" style={{ background: gradientBackground }}>
+            <div className="flex items-center justify-center w-full max-w-4x4 mx-auto px-4 fade-in">
+                <div className="h-0.5 bg-black flex-grow-1"></div>
+                <h2 className="mx-6 text-3xl font-bold text-[rgb(11,33,74)]">
+                    Contactanos
+                </h2>
+                <div className="h-0.5 bg-black flex-grow-4"></div>
+            </div>
+            
+            <div className='mt-12 flex flex-col items-center justify-center fade-in fade-in-delay-1'>
+                <h2>¿Tienes alguna pregunta o proyecto en mente?</h2> 
+                <h2>Estaremos encantados de ayudarte.</h2>
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
+                {/* Tarjeta 1: Teléfono */}
+                <div className="p-6 rounded-4xl w-80 h-70 text-center flex flex-col items-center justify-center fade-in fade-in-delay-2" style={{ backgroundColor: '#9EAEDE', boxShadow: '30px 18px 10px rgba(0, 0, 0, 0.99)' }}>
+                    <div className="text-5xl mb-2 flex items-center justify-center h-12"><FiPhone /></div>
+                    <h3 className="text-lg font-semibold mb-2">Teléfono</h3>
+                    <p className="text-gray-700">+57 3154856897</p>
+                    <p className="text-gray-700">+57 3154856897</p>
+                </div>
+
+                {/* Línea divisoria */}
+                <div className="h-full w-0.5 bg-black mx-4"></div>
+
+                {/* Tarjeta 2: Horarios de atención */}
+                <div className="p-6 rounded-4xl w-80 h-80 text-center flex flex-col items-center mt-40 fade-in fade-in-delay-3" style={{ backgroundColor: '#9EAEDE', boxShadow: '30px 18px 10px rgba(0, 0, 0, 0.99)' }}>
+                    <div className="text-5xl mb-2 flex items-center justify-center h-12"><GiSandsOfTime /></div>
+                    <h3 className="text-lg font-semibold mb-2">Horarios de atención</h3>
+                    <div className="flex justify-between items-center">
+                        <div className="flex-1 text-left">
+                            <h4 className="font-semibold">Lunes a viernes</h4>
+                            <p className="text-gray-700">8:00 a.m. - 12:00 p.m.</p>
+                            <p className="text-gray-700">01:00 p.m. - 5:00 p.m.</p>
+                        </div>
+                        <div className="h-full w-0.5 bg-black mx-4"></div>
+                        <div className="flex-1 text-left">
+                            <h4 className="font-semibold">Sábado y domingo</h4>
+                            <p className="text-gray-700">8:00 a.m. - 12:00 p.m.</p>
+                            <p className="text-gray-700">01:00 p.m. - 3:00 p.m.</p>
+                        </div>
+                        <div className="h-full w-0.5 bg-black mx-4"></div>
+                        <div className="flex-1 text-left">
+                            <h4 className="font-semibold">Días festivos</h4>
+                            <p className="text-gray-700">8:00 a.m. - 12:00 p.m.</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Línea divisoria */}
+                <div className="h-full w-0.5 bg-black mx-4"></div>
+
+                {/* Tarjeta 3: Correo */}
+                <div className="p-6 rounded-4xl w-80 h-70 text-center flex flex-col items-center justify-center fade-in fade-in-delay-4" style={{ backgroundColor: '#9EAEDE', boxShadow: '30px 18px 10px rgba(0, 0, 0, 0.99)' }}>
+                    <div className="text-5xl mb-2 flex items-center justify-center h-12"><MdOutlineAttachEmail /></div>
+                    <h3 className="text-lg font-semibold mb-2">Correo</h3>
+                    <p className="text-gray-700">tecniapp@gmail.com</p>
+                </div>
+            </div>
+
+            <div className='mt-30 flex ml-20 fade-in fade-in-delay-4'>
+                <h1 className='text-2xl'>Si se encuentra interesado en conversar sobre sus proyectos <br /> por favor envienos un mensaje.</h1>
+            </div>
+
+            {/* Incluir el componente Header */}
+            <div className="fade-in fade-in-delay-4">
+                <Header />
+            </div>
         </div>
     );
 }
-export default contact;
+
+export default Contact;

@@ -1,4 +1,4 @@
-import logo from './logo_3.png';
+import logo from './logo.png';
 import service from './service.png';
 import publicidad from './publicidad/1.png';
 import publicidad2 from './publicidad/2.png';
@@ -19,6 +19,7 @@ import flechaDerecha from './service/2.png';
 
 const images = {
     logo,
+    llave,
     service,
     publicidad,
     publicidad2,
