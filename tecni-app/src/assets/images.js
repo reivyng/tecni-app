@@ -6,6 +6,7 @@ import publicidad3 from './publicidad/3.png';
 import publicidad4 from './publicidad/4.png';
 import publicidad5 from './publicidad/5.png';
 import logoBlanco from './logoBlanco.png'
+import llave from './llaveGris.png';
 
 //carpeta de servicios
 import mantenimiento from './service/1.png';
