@@ -233,7 +233,7 @@ const Contact = () => {
                     </div>
                 </motion.div>                {/* Formulario de contacto */}
                 <ContactForm 
-                    whatsappNumber="573154856897"
+                    whatsappNumber="573102944906"
                     title="Formulario de Contacto" 
                     showSidebar={true}
                 />
