@@ -55,6 +55,7 @@ const Carousel = () => {
         clearInterval(intervalId);
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAutoPlaying]);
 
   // Manejadores para pausar/reanudar en hover

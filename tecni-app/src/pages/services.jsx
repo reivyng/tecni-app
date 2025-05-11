@@ -1,8 +1,9 @@
-import React from "react";
 import images from "../assets/images";
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 console.log('Imágenes disponibles:', images); // Agrega esto para debuggear
+
 
 const ServiceCard = ({ title, description, icon, alt, index }) => {
   return (
@@ -40,6 +41,14 @@ const ServiceCard = ({ title, description, icon, alt, index }) => {
       </div>
     </motion.div>
   );
+};
+
+ServiceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 const ContenedorServicios = () => {

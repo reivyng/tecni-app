@@ -12,7 +12,7 @@ import Contact from './pages/contact';
 import About from './pages/about';
 import Services from './pages/services';
 import Projects from './pages/projects';
-import NavBar from './components/Nav';
+import NavBar from './components/nav';
 
 const App = () => (
   <Router>
