@@ -1,6 +1,7 @@
 import Nav from "../components/nav";
 import { motion } from "framer-motion";
 import images from "../assets/images";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -36,18 +37,15 @@ const About = () => {
               sistemas que instalamos y mantenemos.
             </p>
             <div className="flex mt-6 gap-4">
-              <a 
-                href="/services" 
-                className="bg-[#203363] text-white px-6 py-2 rounded-md shadow-md hover:bg-[#1a2a52] transition cursor-pointer"
-              >
-                Nuestros servicios
-              </a>
-              <a 
-                href="/contact" 
+              <Link to="/services" className="bg-[#203363] text-white px-8 py-3 rounded-lg hover:bg-[#1a2a52] transition-colors duration-300 font-medium">
+                Nuestros Servicios
+              </Link>
+              <Link
+                to="/contact"
                 className="border border-[#203363] text-[#203363] px-6 py-2 rounded-md hover:bg-gray-200 transition cursor-pointer"
               >
                 Contáctanos
-              </a>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2">
@@ -190,12 +188,9 @@ const About = () => {
             energía renovable. Desde la instalación de un simple aire acondicionado hasta un sistema 
             completo de paneles solares, nuestro equipo está a tu disposición.
           </p>
-          <a 
-            href="/contact" 
-            className="inline-block bg-white text-[#203363] font-bold px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-300"
-          >
-            Solicita tu presupuesto gratuito
-          </a>
+          <Link to="/contact" className="bg-[#203363] text-white px-8 py-3 rounded-lg hover:bg-[#1a2a52] transition-colors duration-300 font-medium">
+            Solicitar Presupuesto
+          </Link>
         </motion.div>
       </div>
     </div>
