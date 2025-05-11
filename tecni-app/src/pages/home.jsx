@@ -1,6 +1,8 @@
 import images from '../assets/images';
 import Carousel from '../components/carrucel';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import Testimonials from '../components/testimonials';
 
 const Home = () => {
   return (
@@ -263,72 +265,17 @@ const Home = () => {
                 <img src={service.icon} alt={service.title} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-xl font-bold text-blue-900 mb-2">{service.title}</h3>
-              <p className="text-gray-700 flex-grow">{service.description}</p>
-              <button className="mt-4 text-blue-600 font-medium hover:text-blue-800 flex items-center">
+              <p className="text-gray-700 flex-grow">{service.description}</p>              <Link to="/contact" className="mt-4 text-blue-600 font-medium hover:text-blue-800 flex items-center">
                 Ver más 
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
-      </motion.section>
-
-      {/* Sección de testimonios */}
-      <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="w-full bg-blue-50 py-16"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-12 text-center"
-          >
-            Lo que dicen nuestros clientes
-          </motion.h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Carlos Rodríguez",
-                role: "Propietario de Residencia",
-                testimonial: "El equipo de TecniApp realizó una instalación impecable en nuestra casa. El sistema funciona perfectamente y el consumo de energía se redujo significativamente."
-              },
-              {
-                name: "Laura Méndez",
-                role: "Gerente de Restaurante",
-                testimonial: "Después de varios problemas con nuestro sistema de refrigeración, TecniApp logró solucionarlo todo en tiempo récord, evitándonos pérdidas mayores."
-              },
-              {
-                name: "Miguel Ángel Torres",
-                role: "Director de Operaciones",
-                testimonial: "La instalación del sistema de climatización en nuestras oficinas fue profesional y eficiente. El confort mejoró notablemente y el consumo energético se optimizó."
-              }
-            ].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg relative"
-              >
-                <div className="text-blue-600 text-4xl absolute -top-5 left-5"></div>
-                <p className="text-gray-700 italic mb-4 pt-4">{testimonial.testimonial}</p>
-                <div className="border-t border-gray-200 pt-4 mt-4">
-                  <h4 className="font-bold text-blue-900">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
+      </motion.section>      {/* Sección de testimonios */}
+      <Testimonials />
 
       {/* Sección de preguntas frecuentes */}
       <motion.section
@@ -404,13 +351,14 @@ const Home = () => {
             className="text-xl max-w-3xl mx-auto mb-8"
           >
             Contáctanos hoy mismo para una consulta gratuita y descubre cómo podemos ayudarte con soluciones de climatización y refrigeración adaptadas a tus necesidades.
-          </motion.p>
-          <motion.button
-            whileHover={{ scale: 1.05, backgroundColor: "#FBBF24" }}
-            className="bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-all duration-300"
-          >
-            Solicitar Presupuesto
-          </motion.button>
+          </motion.p>          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link 
+              to="/contact"
+              className="bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:bg-[#FBBF24] inline-block"
+            >
+              Solicitar Presupuesto
+            </Link>
+          </motion.div>
         </div>
       </motion.section>
     </>

@@ -219,15 +219,119 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
+                </motion.div>                {/* Formulario de contacto */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.8 }}
+                    className="bg-white rounded-xl shadow-lg mb-16 max-w-4xl mx-auto overflow-hidden"
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-3">
+                        <div className="p-8 bg-[#203363] md:col-span-1 text-white flex flex-col justify-between">
+                            <div>
+                                <h2 className="text-2xl font-bold mb-6">Solicita tu presupuesto</h2>
+                                <p className="mb-8">Completa el formulario y nuestro equipo técnico te contactará a la brevedad para ofrecerte una solución personalizada.</p>
+                                
+                                <div className="flex items-start mb-4">
+                                    <FaTools className="mr-3 text-yellow-400 text-2xl flex-shrink-0 mt-1" />
+                                    <div>
+                                        <h3 className="font-semibold text-lg">Servicios Técnicos</h3>
+                                        <p className="text-gray-300">Reparación, mantenimiento e instalación</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="flex items-start mb-4">
+                                    <FaSnowflake className="mr-3 text-yellow-400 text-2xl flex-shrink-0 mt-1" />
+                                    <div>
+                                        <h3 className="font-semibold text-lg">Climatización</h3>
+                                        <p className="text-gray-300">Soluciones eficientes para tu confort</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="flex items-start">
+                                    <FaSolarPanel className="mr-3 text-yellow-400 text-2xl flex-shrink-0 mt-1" />
+                                    <div>
+                                        <h3 className="font-semibold text-lg">Energía Solar</h3>
+                                        <p className="text-gray-300">Sistemas fotovoltaicos para ahorrar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="mt-12 pt-6 border-t border-gray-700">
+                                <p>TECNIApp - Tecnología a tu servicio</p>
+                            </div>
+                        </div>
+                        
+                        <div className="p-8 md:col-span-2">
+                            <h2 className="text-2xl font-bold text-[#203363] mb-6">Formulario de Contacto</h2>
+                            <form>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div>
+                                        <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                                        <input 
+                                            type="text" 
+                                            id="nombre" 
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                            placeholder="Tu nombre"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+                                        <input 
+                                            type="email" 
+                                            id="email" 
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                            placeholder="correo@ejemplo.com"
+                                        />
+                                    </div>
+                                </div>
+                                
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div>
+                                        <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                                        <input 
+                                            type="tel" 
+                                            id="telefono" 
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                            placeholder="Tu número de teléfono"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="servicio" className="block text-sm font-medium text-gray-700 mb-1">Servicio que necesitas</label>
+                                        <select 
+                                            id="servicio" 
+                                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        >
+                                            <option value="">Selecciona un servicio</option>
+                                            <option value="aire">Aire Acondicionado</option>
+                                            <option value="refrigeracion">Refrigeración</option>
+                                            <option value="lavadoras">Lavadoras</option>
+                                            <option value="solar">Paneles Solares</option>
+                                            <option value="electro">Otros Electrodomésticos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div className="mb-4">
+                                    <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                                    <textarea 
+                                        id="mensaje" 
+                                        rows="4" 
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        placeholder="Describe brevemente tu necesidad o problema técnico..."
+                                    ></textarea>
+                                </div>
+                                
+                                <button 
+                                    type="submit" 
+                                    className="bg-[#203363] text-white py-3 px-6 rounded-md hover:bg-[#152547] transition-colors w-full md:w-auto"
+                                >
+                                    Enviar Solicitud
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </motion.div>
-
-                {/* Formulario de contacto */}
-                {/* <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.6, delay: 0.9 }}                >
-                    <Header />
-                </motion.div> */}
             </div>
         </div>
     );
