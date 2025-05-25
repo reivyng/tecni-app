@@ -18,7 +18,6 @@ import flechaDerecha from './service/2.png';
 //carpeta de project
 
 import washingMachine from './Project/Lavadora.png';
-import solarPanels from './Project/Panel.png';
 
 import refrigerator_1_1 from './Project/Refrigeracion_1_1.jpg';
 import refrigerator_1_2 from './Project/Refrigeracion_1_2.jpg';
@@ -35,6 +34,13 @@ import AireAcondicionado_1_3 from './Project/AireAcondicionado_1_3.jpg';
 import AireAcondicionado_1_4 from './Project/AireAcondicionado_1_4.jpg'; 
 import AireAcondicionado_1_5 from './Project/AireAcondicionado_1_5.jpg';
 
+//sistema electrico
+import TableroElectrico_1_1 from './Project/TableroElectrico_1_1.jpg';
+import TableroElectrico_1_2 from './Project/TableroElectrico_1_2.jpg';
+import TableroElectrico_1_3 from './Project/TableroElectrico_1_3.jpg';
+import TableroElectrico_1_4 from './Project/TableroElectrico_1_4.jpg';
+import TableroElectrico_1_5 from './Project/TableroElectrico_1_5.jpg';
+import TableroElectrico_1_6 from './Project/TableroElectrico_1_6.jpg';
 
 //tecnicos
 //Tecnicos
@@ -74,12 +80,18 @@ const images = {
     AireAcondicionado_1_4,
     AireAcondicionado_1_5,
 
+    TableroElectrico_1_1,
+    TableroElectrico_1_2,
+    TableroElectrico_1_3,
+    TableroElectrico_1_4,
+    TableroElectrico_1_5,
+    TableroElectrico_1_6,
 
     lavadora,
     rayo,
     flechaDerecha,    // Nuevas imágenes gratuitas
     washingMachine,
-    solarPanels,
+    
     technician,
     
     teamWorking,

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Card = ({ image, image2,image3, image4, image5, title, text, category }) => {
+const Card = ({ image, image2,image3, image4, image5, image6, title, text, category }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [showZoom, setShowZoom] = useState(false);
@@ -11,6 +11,7 @@ const Card = ({ image, image2,image3, image4, image5, title, text, category }) =
   if (image3) images.push(image3);
   if (image4) images.push(image4);
   if (image5) images.push(image5);
+  if (image6) images.push(image6);
 
   // Mapeo de categorías a etiquetas en español
   const categoryLabels = {

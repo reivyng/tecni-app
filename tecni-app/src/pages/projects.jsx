@@ -84,7 +84,12 @@ const data = [
   // Sistema Eléctrico/Paneles solares (categoría: "paneles-solares") - 3 proyectos
 
   {
-    image: images.solarPanels,
+    image: images.TableroElectrico_1_1,
+    image2: images.TableroElectrico_1_2,
+    image3: images.TableroElectrico_1_3,
+    image4: images.TableroElectrico_1_4,
+    image5: images.TableroElectrico_1_5,
+    image6: images.TableroElectrico_1_6,
     title: "Diseño y Fabricación de Tableros Eléctricos y Electrónicos Automatizados",
     text: <div>
         <p>
@@ -106,19 +111,6 @@ const data = [
     category: "paneles-solares"
   },
 
-  // Electrodomésticos (categoría: "electrodomesticos") - 4 proyectos
-  {
-    image: images.washingMachine,
-    title: "Mantenimiento lavadora",
-    text: "Realizamos un mantenimiento preventivo y correctivo completo en lavadoras. Incluye limpieza de filtros, revisión del sistema de drenaje, calibración del tambor y verificación del sistema electrónico. El cliente reportaba vibraciones excesivas durante el ciclo de centrifugado que fueron completamente corregidas.",
-    category: "electrodomesticos"
-  },
-  {
-    image: images.kitchenAppliances,
-    title: "Reparación de sistema de calefacción industrial para restaurante",
-    text: "Diagnóstico y reparación de sistema de calefacción para cocina industrial que presentaba fallos intermitentes. Se identificó un problema en el controlador central, se reemplazaron componentes dañados y se implementó un sistema de monitoreo para prevenir futuras averías. El cliente recuperó la operatividad completa de su cocina.",
-    category: "electrodomesticos"
-  },
 
   
   
@@ -210,6 +202,7 @@ const Projects = () => {
                 image3={item.image3} 
                 image4={item.image4}
                 image5={item.image5}
+                image6={item.image6}
                 title={item.title} 
                 text={item.text} 
                 category={item.category} 

@@ -8,7 +8,6 @@ const ProjectFilters = ({ activeFilter, setActiveFilter }) => {
     { id: "refrigeracion", label: "Refrigeración Industrial" },
     { id: "aires", label: "Aires acondicionados" },
     { id: "paneles-solares", label: "Automatización Eléctrica" },
-    { id: "electrodomesticos", label: "Electrodomésticos" }
   ];
 
   return (
