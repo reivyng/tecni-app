@@ -54,8 +54,8 @@ const Contact = () => {
                             </div>
                             <h3 className="text-xl font-semibold text-[#203363]">Teléfonos</h3>
                         </div>
-                        <p className="text-gray-700 mb-2">Atención al cliente: +57 315 485 6897</p>
-                        <p className="text-gray-700">Soporte técnico: +57 314 255 2132</p>
+                        <p className="text-gray-700 mb-2">Atención al cliente: +57 313 572 8336</p>
+                        <p className="text-gray-700">Soporte técnico: +57 316 869 2497</p>
                         <div className="mt-4 pt-4 border-t border-gray-200">
                             <p className="text-sm text-gray-600">Respuesta inmediata en horario laboral</p>
                         </div>
@@ -102,13 +102,11 @@ const Contact = () => {
                             <div className="bg-[#96B2C7] w-12 h-12 rounded-full flex items-center justify-center mr-4">
                                 <MdOutlineAttachEmail className="text-2xl text-[#203363]" />
                             </div>
-                            <h3 className="text-xl font-semibold text-[#203363]">Correos electrónicos</h3>
+                            <h3 className="text-xl font-semibold text-[#203363]">Correo electrónico</h3>
                         </div>
-                        <p className="text-gray-700 mb-2">Información general: <span className="font-medium">tecniapp@gmail.com</span></p>
-                        <p className="text-gray-700 mb-2">Soporte técnico: <span className="font-medium">soporte@tecniapp.com</span></p>
-                        <p className="text-gray-700">Presupuestos: <span className="font-medium">presupuestos@tecniapp.com</span></p>
+                        <p className="text-gray-700 mb-2">Información general: <span className="font-medium">tecniappneiva@gmail.com</span></p>
                         <div className="mt-4 pt-4 border-t border-gray-200">
-                            <p className="text-sm text-gray-600">Respondemos en menos de 24 horas</p>
+                            <p className="text-sm text-gray-600">Respondemos en menos de 48 horas</p>
                         </div>
                     </motion.div>
                 </div>                <motion.div 

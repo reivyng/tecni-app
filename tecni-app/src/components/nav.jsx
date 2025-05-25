@@ -33,7 +33,8 @@ const NavBar = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 p-4 md:p-6 bg-white border-b border-gray-300 ${scrolled ? 'shadow-md' : ''} transition-all duration-300 w-full`}>
         <div className="container mx-auto">
           {/* Versión móvil */}
-          <div className="flex items-center justify-between md:hidden">            <div className="flex items-center space-x-4">
+          <div className="flex items-center justify-between md:hidden">            
+            <div className="flex items-center space-x-4">
               <Link to="/contact" className="text-[#203363] text-lg" aria-label="Facebook">
                 <FaFacebook />
               </Link>
@@ -41,9 +42,14 @@ const NavBar = () => {
                 <FaInstagram />
               </Link>
             </div>
-            <a href="tel:3204155186" className="flex items-center text-[#203363] text-lg">
+            <a href="tel:313 5728336" className="flex items-center text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300  ">
               <FaPhone className="mr-1" size={14} />
-              <span className="text-sm">320 4155186</span>
+              <span className="text-sm">313 5728336</span>
+            </a>
+            <span>-</span> 
+            <a href="tel:316 8692497" className="flex items-center text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300">
+              <FaPhone className="mr-1" size={14} />
+              <span className="text-sm">316 8692497</span>
             </a>
             <button 
               className="text-[#203363] focus:outline-none"
@@ -104,8 +110,12 @@ const NavBar = () => {
               <a href="#" className="text-[#203363] text-lg" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="tel:3204155186" className="text-[#203363] text-lg">
-                320 4155186
+              <a href="tel:313 5728336 " className="text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300 ">
+                313 5728336 
+              </a>
+              <span>-</span>
+              <a href="tel:316 8692497" className="text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300">
+                316 8692497
               </a>
             </div>
             <div className="flex space-x-8 text-lg">
