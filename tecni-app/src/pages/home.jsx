@@ -12,13 +12,13 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-61" // 
+        className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-11" 
       >
         <div className="flex flex-col md:flex-row items-center justify-between">
           <motion.img 
             src={images.logo} 
             alt="tecniapp" 
-            className="w-full max-w-[200px] md:max-w-[250px] mx-auto"
+            className="w-full max-w-[400px] md:max-w-[450px] mx-auto"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />
