@@ -79,14 +79,15 @@ export const Footer = () => {
             <br />
             ¡Escríbenos por WhatsApp!
           </p>
-          <a
-            href="https://qr.me-qr.com/vcjJ3F0k"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-16 p-2 mx-auto transition bg-green-500 rounded-full md:mx-0 hover:bg-green-600"
-          >
-            <FaWhatsapp className="text-3xl text-white" />
-          </a>
+          <button
+                            onClick={() => {
+                                const whatsappURL = `https://wa.me/573102944906?text=${encodeURIComponent('Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?')}`;
+                                window.open(whatsappURL, '_blank');
+                            }}
+                            className="bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-600 transition-colors text-center flex items-center justify-center"
+                        >
+                            <FaWhatsapp className="mr-2" /> WhatsApp
+                        </button>
         </div>
       </div>
 
