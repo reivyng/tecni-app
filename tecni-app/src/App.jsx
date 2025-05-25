@@ -28,7 +28,7 @@ const App = () => (  <Router>
       
       {/* Botón flotante de WhatsApp disponible en todas las páginas */}
       <WhatsAppButton 
-        phoneNumber="+573102944906"
+        phoneNumber="+57 3135728336"
         message="¡Hola! Estoy visitando la página web de TECNIApp y me gustaría obtener más información sobre sus servicios."
       />
       

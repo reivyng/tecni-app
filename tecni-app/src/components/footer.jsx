@@ -28,11 +28,15 @@ export const Footer = () => {
           </div>
           <div className="flex items-center justify-center space-x-2 md:justify-start">
             <FaPhone className="text-lg text-white" />
-            <span>+57 3154856987</span>
+            <span>+57 3135728336</span>
+          </div>
+          <div className="flex items-center justify-center space-x-2 md:justify-start">
+            <FaPhone className="text-lg text-white" />
+            <span>+57 3168692497</span>
           </div>
           <div className="flex items-center justify-center space-x-2 md:justify-start">
             <FaEnvelope className="text-lg text-white" />
-            <span>tecniapp@gmail.com</span>
+            <span>tecniappneiva@gmail.com</span>
           </div>
         </div>
 
@@ -67,7 +71,7 @@ export const Footer = () => {
             <Link to="/services" className="hover:text-yellow-300 transition-colors">Servicios</Link>
             <Link to="/projects" className="hover:text-yellow-300 transition-colors">Proyectos</Link>
             <Link to="/about" className="hover:text-yellow-300 transition-colors">Nosotros</Link>
-            <Link to="/contact" className="hover:text-yellow-300 transition-colors">Contacto</Link>
+            <Link to="/contact" className="hover:text-yellow-300 transition-colors">Contactanos</Link>
           </div>
         </div>
 
