@@ -123,36 +123,62 @@ const About = () => {
         </motion.h2>
         
         <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-10 text-center">
-          En TECNIApp, contamos con un equipo de profesionales altamente capacitados y comprometidos 
-          con ofrecer el mejor servicio. Nuestros técnicos combinan experiencia, conocimiento técnico 
-          y pasión por la excelencia para garantizar resultados excepcionales en cada proyecto.
+          En TECNIAPP contamos con un equipo de profesionales altamente capacitados, con experiencia técnica y compromiso total con la calidad. Ingenieros, técnicos y auxiliares trabajan en conjunto para ofrecer soluciones eficientes, seguras y personalizadas en refrigeración, climatización y automatización, siempre enfocados en superar las expectativas de nuestros clientes.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {[
             {
-              name: "Carlos Rodríguez",
-              position: "Director Técnico",
+              name: "Halfdam Claret Delgado Trujillo",
+              position: "Ingeniero Industrial",
               image: images.technician1,
-              description: "Ingeniero especializado con más de 15 años de experiencia en sistemas de climatización industrial y comercial."
+              description: 
+              <div>
+                <ul>
+                  <li>Líder en eficiencia operativa:</li>
+                  <br />
+                  <li>Es el encargado de optimizar los procesos internos de TECNIAPP, garantizando que cada servicio se realice con máxima eficiencia, calidad y puntualidad. Su enfoque en mejora continua permite que nuestros proyectos sean rentables y sostenibles, cuidando siempre los recursos de nuestros clientes.</li>
+                </ul>
+              </div>
             },
             {
-              name: "Ana Martínez",
-              position: "Especialista en Sistemas Solares",
+              name: "Luis Alberto Delgado Trujillo",
+              position: "Ingeniero de proyectos",
               image: images.technician2,
-              description: "Certificada en instalación y mantenimiento de sistemas fotovoltaicos residenciales y comerciales."
+              description: 
+              <div>
+                <ul>
+                  <li>Diseño y supervisión técnica especializada:</li>
+                  <br />
+                  <li>Es el responsable de planear, diseñar y coordinar cada uno de nuestros proyectos de refrigeración, climatización y automatización. Su experiencia asegura que cada sistema funcione con precisión, cumpla con las normativas y supere las expectativas del cliente.</li>
+                </ul>
+              </div>
             },
             {
-              name: "Javier López",
-              position: "Técnico Senior HVAC",
+              name: "Camilo Andres Rivera Paredes",
+              position: "Técnico en Refrigeración y climatización",
               image: images.technician,
-              description: "Experto en diagnóstico y reparación de sistemas de aire acondicionado y calefacción de alta eficiencia."
+              description: 
+              <div>
+                <ul>
+                  <li>Manos expertas en el campo:</li>
+                  <br />
+                  <li>Es quien convierte los planos en realidad. Con conocimiento práctico, experiencia en instalaciones comerciales e industriales y un compromiso absoluto con la calidad, ejecuta cada servicio con profesionalismo, seguridad y precisión.</li>
+                </ul>
+              </div>
             },
             {
-              name: "Laura Sánchez",
-              position: "Gestión de Proyectos",
+              name: "Jose Gregorio Fandiño Rivera",
+              position: "Auxiliar de Refrigeración y climatización",
               image: images.technician3,
-              description: "Coordinadora de proyectos de instalación, asegurando la satisfacción del cliente y la calidad en cada etapa."
+              description: 
+              <div>
+                <ul>
+                  <li>Apoyo clave en cada instalación:</li>
+                  <br />
+                  <li>Acompaña al equipo técnico en tareas operativas, logísticas y de montaje. Su trabajo asegura que las instalaciones se realicen de forma ágil, organizada y eficiente, cuidando cada detalle y apoyando el cumplimiento de los estándares técnicos.</li>
+                </ul>
+              </div>
             }
           ].map((member, index) => (
             <motion.div
