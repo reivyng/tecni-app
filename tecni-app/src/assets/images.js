@@ -15,19 +15,24 @@ import copoDeNieve from './service/3.png';
 import lavadora from './service/5.png';
 import rayo from './service/4.png';
 import flechaDerecha from './service/2.png';
+//carpeta de project
+import airConditioner from './Project/AireAcondicionado.png';
+import washingMachine from './Project/Lavadora.png';
+import solarPanels from './Project/Panel.png';
+
 
 // Imágenes gratuitas para uso comercial (URLs externas)
 
-const washingMachine = "https://images.unsplash.com/photo-1626806787461-102c1a7f1c62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Lavadora
-const airConditioner = "https://images.unsplash.com/photo-1608047919259-6ecb0aae1fac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Aire acondicionado
-const solarPanels = "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Paneles solares
-const technician = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Técnico trabajando
-const kitchenAppliances = "https://images.unsplash.com/photo-1556911220-bda9da8a77c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Electrodomésticos de cocina
-const teamWorking = "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Equipo trabajando
-const technician1 = "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Técnico profesional 1
-const technician2 = "https://images.unsplash.com/photo-1573496527892-904f897eb744?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Técnico profesional 2
-const technician3 = "https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Técnico profesional 3
-const technician4 = "https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Técnico profesional 4
+// Imágenes principales de Pexels (más estables que Unsplash)
+
+const technician = "https://images.pexels.com/photos/8961219/pexels-photo-8961219.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico trabajando
+const kitchenAppliances = "https://images.pexels.com/photos/4050318/pexels-photo-4050318.jpeg?auto=compress&cs=tinysrgb&w=800"; // Electrodomésticos de cocina
+const teamWorking = "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"; // Equipo trabajando
+const technician1 = "https://images.pexels.com/photos/8961242/pexels-photo-8961242.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 1
+const technician2 = "https://images.pexels.com/photos/5710881/pexels-photo-5710881.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 2
+const technician3 = "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 3
+const technician4 = "https://images.pexels.com/photos/8961159/pexels-photo-8961159.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 4
+
 
 
 const images = {
