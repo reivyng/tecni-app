@@ -16,9 +16,33 @@ import lavadora from './service/5.png';
 import rayo from './service/4.png';
 import flechaDerecha from './service/2.png';
 //carpeta de project
-import airConditioner from './Project/AireAcondicionado.png';
+
 import washingMachine from './Project/Lavadora.png';
-import solarPanels from './Project/Panel.png';
+
+import refrigerator_1_1 from './Project/Refrigeracion_1_1.jpg';
+import refrigerator_1_2 from './Project/Refrigeracion_1_2.jpg';
+import refrigerator_1_3 from './Project/Refrigeracion_1_3.jpg';
+
+import refrigerator_2_1 from './Project/Refrigeracion_2_1.jpg';
+import refrigerator_2_2 from './Project/Refrigeracion_2_2.jpg';
+import refrigerator_2_3 from './Project/Refrigeracion_2_3.jpg';
+
+// Aire Acondicionado
+import AireAcondicionado_1_1 from './Project/AireAcondicionado_1_1.jpg'; 
+import AireAcondicionado_1_2 from './Project/AireAcondicionado_1_2.jpg'; 
+import AireAcondicionado_1_3 from './Project/AireAcondicionado_1_3.jpg'; 
+import AireAcondicionado_1_4 from './Project/AireAcondicionado_1_4.jpg'; 
+import AireAcondicionado_1_5 from './Project/AireAcondicionado_1_5.jpg';
+
+//sistema electrico
+import TableroElectrico_1_1 from './Project/TableroElectrico_1_1.jpg';
+import TableroElectrico_1_2 from './Project/TableroElectrico_1_2.jpg';
+import TableroElectrico_1_3 from './Project/TableroElectrico_1_3.jpg';
+import TableroElectrico_1_4 from './Project/TableroElectrico_1_4.jpg';
+import TableroElectrico_1_5 from './Project/TableroElectrico_1_5.jpg';
+import TableroElectrico_1_6 from './Project/TableroElectrico_1_6.jpg';
+
+//tecnicos
 //Tecnicos
 import teamWorking from './teamWorking.jpg'; // Equipo trabajando
 import technician1 from './technician1.jpg'; // Técnico 1
@@ -26,12 +50,6 @@ import technician3 from './technician3.jpg'; // Técnico 3
 import technician from './technician.jpg'; // Técnico 4
 import technician2 from './technician2.jpg'; // Técnico 2
 
-// Imágenes gratuitas para uso comercial (URLs externas)
-
-// Imágenes principales de Pexels (más estables que Unsplash)
-
-const kitchenAppliances = "https://images.pexels.com/photos/4050318/pexels-photo-4050318.jpeg?auto=compress&cs=tinysrgb&w=800"; // Electrodomésticos de cocina
-const technician4 = "https://images.pexels.com/photos/8961159/pexels-photo-8961159.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 4
 
 
 
@@ -48,19 +66,39 @@ const images = {
     mantenimiento,
     termometro,
     copoDeNieve,
+    //imagenes de project
+    refrigerator_1_1,
+    refrigerator_1_2,
+    refrigerator_1_3,
+    refrigerator_2_1,
+    refrigerator_2_2,
+    refrigerator_2_3,
+
+    AireAcondicionado_1_1,
+    AireAcondicionado_1_2,
+    AireAcondicionado_1_3,
+    AireAcondicionado_1_4,
+    AireAcondicionado_1_5,
+
+    TableroElectrico_1_1,
+    TableroElectrico_1_2,
+    TableroElectrico_1_3,
+    TableroElectrico_1_4,
+    TableroElectrico_1_5,
+    TableroElectrico_1_6,
+
     lavadora,
     rayo,
     flechaDerecha,    // Nuevas imágenes gratuitas
     washingMachine,
-    airConditioner,
-    solarPanels,
+    
     technician,
-    kitchenAppliances,
+    
     teamWorking,
     technician1,
     technician2,
     technician3,
-    technician4,
+    
 };
 
 export default images;
