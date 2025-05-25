@@ -23,9 +23,11 @@ import solarPanels from './Project/Panel.png';
 
 import refrigerator_1_1 from './Project/Refrigeracion_1_1.jpg';
 import refrigerator_1_2 from './Project/Refrigeracion_1_2.jpg';
+import refrigerator_1_3 from './Project/Refrigeracion_1_3.jpg';
 
 import refrigerator_2_1 from './Project/Refrigeracion_2_1.jpg';
 import refrigerator_2_2 from './Project/Refrigeracion_2_2.jpg';
+import refrigerator_2_3 from './Project/Refrigeracion_2_3.jpg';
 
 
 //tecnicos
@@ -61,8 +63,10 @@ const images = {
     //imagenes de project
     refrigerator_1_1,
     refrigerator_1_2,
+    refrigerator_1_3,
     refrigerator_2_1,
     refrigerator_2_2,
+    refrigerator_2_3,
     lavadora,
     rayo,
     flechaDerecha,    // Nuevas imágenes gratuitas

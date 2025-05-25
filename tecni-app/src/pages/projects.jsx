@@ -11,6 +11,7 @@ const data = [
   {
     image: images.refrigerator_1_1,
     image2: images.refrigerator_1_2,
+    image3: images.refrigerator_1_3,
     title: "Diseño e instalación de sistemas de refrigeración",
     text: <div> 
       <p>En TECNIAPP diseñamos e instalamos sistemas de refrigeración de alto rendimiento, ideales para cámaras frigoríficas comerciales e industriales.</p>
@@ -31,6 +32,7 @@ const data = [
   {
     image: images.refrigerator_2_1,
     image2: images.refrigerator_2_2,
+    image3: images.refrigerator_2_3,
     title: "Diseño e instalación cámaras frigoríficas",
     text: <div>
       <p>En TECNIAPP diseñamos e instalamos cámaras frigoríficas a la medida de tu negocio.</p>
@@ -46,30 +48,11 @@ const data = [
     </div>,
     category: "refrigeracion"
   },
-  {
-    image: images.refrigerator,
-    title: "Diseño e instalación de sistema de refrigeración chiller 40tr",
-    text: "Implementación de sistema chiller de 40 toneladas de refrigeración para planta procesadora de lácteos. El proyecto incluyó diseño personalizado, instalación de unidad enfriadora, red de distribución y automatización con control PID para mantener temperaturas estables en el proceso productivo.",
-    category: "refrigeracion"
-  },
-
   // Aires acondicionados (categoría: "aires") - 4 proyectos
   {
     image: images.airConditioner,
     title: "Instalación de aire acondicionado",
     text: "Instalación completa de sistema de climatización en residencia familiar, incluyendo montaje de unidades interior y exterior, conexión de tuberías de refrigerante, cableado eléctrico y configuración del sistema. El cliente ahora disfruta de un ambiente perfectamente climatizado con un equipo de bajo consumo energético.",
-    category: "aires"
-  },
-  {
-    image: images.airConditioner,
-    title: "Mantenimiento de sistema de aire acondicionado comercial",
-    text: "Servicio integral de mantenimiento para sistema central de aire acondicionado en oficinas corporativas. Incluye limpieza de ductos, revisión de compresores, recarga de refrigerante y optimización del sistema de control. El cliente experimentó una mejora significativa en la calidad del aire y eficiencia energética.",
-    category: "aires"
-  },
-  {
-    image: images.airConditioner,
-    title: "Instalación de sistema VRF para edificio de oficinas",
-    text: "Implementación de sistema de Flujo de Refrigerante Variable (VRF) para climatización de edificio de 5 pisos. El proyecto abarcó diseño personalizado, instalación de unidades exteriores en azotea, distribución de 20 unidades interiores y programación del sistema centralizado de control inteligente por zonas.",
     category: "aires"
   },
   {
@@ -92,12 +75,6 @@ const data = [
     text: "Desarrollo de sistema de control automatizado para planta procesadora de alimentos. El proyecto incluyó diseño eléctrico, programación PLC, implementación de HMI táctil y configuración de alarmas. El sistema permite monitoreo en tiempo real, control preciso de temperaturas y generación automática de informes.",
     category: "paneles-solares"
   },
-  {
-    image: images.solarPanels,
-    title: "Sistema solar comercial con respaldo de baterías",
-    text: "Instalación de sistema fotovoltaico de 30kW para hotel con almacenamiento en baterías de litio. El proyecto incluye 75 paneles de alta eficiencia, sistema de monitorización remota y configuración de respaldo automático durante cortes eléctricos. La inversión se recuperará en menos de 5 años.",
-    category: "paneles-solares"
-  },
 
   // Electrodomésticos (categoría: "electrodomesticos") - 4 proyectos
   {
@@ -108,32 +85,13 @@ const data = [
   },
   {
     image: images.kitchenAppliances,
-    title: "Instalación y configuración de cocina inteligente integrada",
-    text: "Instalación completa de un sistema de cocina inteligente con electrodomésticos conectados. El proyecto incluyó la configuración de la red doméstica, sincronización entre dispositivos y programación de rutinas automatizadas. El cliente ahora disfruta de una cocina moderna controlable desde su smartphone.",
-    category: "electrodomesticos"
-  },
-  {
-    image: images.kitchenAppliances,
     title: "Reparación de sistema de calefacción industrial para restaurante",
     text: "Diagnóstico y reparación de sistema de calefacción para cocina industrial que presentaba fallos intermitentes. Se identificó un problema en el controlador central, se reemplazaron componentes dañados y se implementó un sistema de monitoreo para prevenir futuras averías. El cliente recuperó la operatividad completa de su cocina.",
     category: "electrodomesticos"
   },
 
-  // Nuevos proyectos específicos de refrigeración industrial
-  {
-    image: images.refrigerator,
-    title: "Instalación de sistema de congelación Rack para supermercado",
-
-    text: "Diseño e implementación de sistema de refrigeración tipo Rack para cadena de supermercados. El sistema centralizado con múltiples compresores permite alimentar 25 exhibidores refrigerados y 8 cámaras de congelación. La solución incluye monitoreo remoto, alarmas de temperatura y recuperación de calor para calefacción.",
-    category: "refrigeracion"
-  },
-  {
-    image: images.refrigerator,
-    title: "Planta productora de hielo industrial 10 ton/día",
-
-    text: "Implementación de planta completa para producción de hielo industrial con capacidad de 10 toneladas diarias. El proyecto incluyó diseño de ingeniería, instalación del sistema de refrigeración, equipos de formación de hielo, sistema de almacenamiento y automatización del proceso productivo.",
-    category: "refrigeracion"
-  },
+  
+  
 ];
 
 
@@ -218,7 +176,8 @@ const Projects = () => {
             >
               <Card 
                 image={item.image} 
-                image2={item.image2} 
+                image2={item.image2}
+                image3={item.image3} 
                 title={item.title} 
                 text={item.text} 
                 category={item.category} 
