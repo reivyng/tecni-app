@@ -123,22 +123,22 @@ const Contact = () => {
                             <div className="bg-[#96B2C7] w-16 h-16 rounded-full flex items-center justify-center mb-4">
                                 <FaSnowflake className="text-2xl text-[#203363]" />
                             </div>
-                            <h3 className="text-lg font-semibold text-[#203363] mb-2">Climatización</h3>
-                            <p className="text-gray-600">Instalación y mantenimiento de sistemas de aire acondicionado y refrigeración para hogares y negocios.</p>
+                            <h3 className="text-lg font-semibold text-[#203363] mb-2">Refrigeriación Industrial</h3>
+                            <p className="text-gray-600">Soluciones especializadas en enfriamiento para maquinaria y procesos industriales, garantizando eficiencia y durabilidad.</p>
                         </div>
                         <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 flex flex-col items-center text-center">
                             <div className="bg-[#96B2C7] w-16 h-16 rounded-full flex items-center justify-center mb-4">
                                 <FaTools className="text-2xl text-[#203363]" />
                             </div>
-                            <h3 className="text-lg font-semibold text-[#203363] mb-2">Reparación de Electrodomésticos</h3>
-                            <p className="text-gray-600">Servicio técnico especializado para todo tipo de electrodomésticos de refrigeración y lavado.</p>
+                            <h3 className="text-lg font-semibold text-[#203363] mb-2">Aires Acondicionados</h3>
+                            <p className="text-gray-600">Instalación y mantenimiento de sistemas de climatización para hogares, oficinas y espacios comerciales.</p>
                         </div>
                         <div className="bg-white rounded-lg p-6 shadow-md border border-gray-200 flex flex-col items-center text-center">
                             <div className="bg-[#96B2C7] w-16 h-16 rounded-full flex items-center justify-center mb-4">
                                 <FaSolarPanel className="text-2xl text-[#203363]" />
                             </div>
-                            <h3 className="text-lg font-semibold text-[#203363] mb-2">Energía Solar</h3>
-                            <p className="text-gray-600">Diseño e instalación de sistemas fotovoltaicos para reducir costos energéticos y contribuir al medio ambiente.</p>
+                            <h3 className="text-lg font-semibold text-[#203363] mb-2">Sistema Electrico</h3>
+                            <p className="text-gray-600">Servicios integrales en instalación y reparación eléctrica, asegurando seguridad y óptimo funcionamiento.</p>
                         </div>
                     </div>
                 </motion.div>                 <motion.div 

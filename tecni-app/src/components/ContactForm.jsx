@@ -127,24 +127,24 @@ const ContactForm = ({
               <div className="flex items-start mb-4">
                 <FaTools className="mr-3 text-yellow-400 text-2xl flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg">Servicios Técnicos</h3>
-                  <p className="text-gray-300">Reparación, mantenimiento e instalación</p>
+                  <h3 className="font-semibold text-lg">Refrigeriación Industrial</h3>
+                  <p className="text-gray-300">Enfriamiento industrial eficiente y duradero</p>
                 </div>
               </div>
               
               <div className="flex items-start mb-4">
                 <FaSnowflake className="mr-3 text-yellow-400 text-2xl flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg">Climatización</h3>
-                  <p className="text-gray-300">Soluciones eficientes para tu confort</p>
+                  <h3 className="font-semibold text-lg">Aires Acondicionados</h3>
+                  <p className="text-gray-300">Instalación y mantenimiento de climatización</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <FaSolarPanel className="mr-3 text-yellow-400 text-2xl flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg">Energía Solar</h3>
-                  <p className="text-gray-300">Sistemas fotovoltaicos para ahorrar</p>
+                  <h3 className="font-semibold text-lg">Sistema Electrico</h3>
+                  <p className="text-gray-300">Instalación y reparación eléctrica segura</p>
                 </div>
               </div>
             </div>
