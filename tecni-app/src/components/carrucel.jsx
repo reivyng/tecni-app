@@ -106,12 +106,17 @@ const Carousel = () => {
             src={carouselImages[actualIndex].src}
             alt={carouselImages[actualIndex].alt}
             className={`rounded-lg cursor-pointer transition-all duration-500 ${
-              pos === 1 ? "w-[220px] h-[300px] shadow-xl shadow-yellow-600" : "w-25 h-22 opacity-50"
+              pos === 1 ? "w-[220px] h-[300px] shadow-xl shadow-yellow-600 hover:scale-110" : "w-25 h-22 opacity-50 hover:opacity-80 hover:scale-105"
             }`}
             animate={{
               scale: pos === 1 ? 1.1 : 0.9,
               opacity: pos === 1 ? 1 : 0.5,
               x: pos === 0 ? -60 : pos === 2 ? 60 : 0
+            }}
+            whileHover={{
+              scale: pos === 1 ? 1.40 : 1.0,
+              opacity: pos === 1 ? 1 : 0.7,
+              transition: { duration: 0.3, ease: "easeInOut" }
             }}
             transition={{ duration: 0.3 }}
             onClick={() => handleImageClick(actualIndex)}
