@@ -29,17 +29,18 @@ import refrigerator_2_2 from './Project/Refrigeracion_2_2.jpg';
 
 
 //tecnicos
+//Tecnicos
+import teamWorking from './teamWorking.jpg'; // Equipo trabajando
+import technician1 from './technician1.jpg'; // Técnico 1
+import technician3 from './technician3.jpg'; // Técnico 3
+import technician from './technician.jpg'; // Técnico 4
+import technician2 from './technician2.jpg'; // Técnico 2
 
 // Imágenes gratuitas para uso comercial (URLs externas)
 
 // Imágenes principales de Pexels (más estables que Unsplash)
 
-const technician = "https://images.pexels.com/photos/8961219/pexels-photo-8961219.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico trabajando
 const kitchenAppliances = "https://images.pexels.com/photos/4050318/pexels-photo-4050318.jpeg?auto=compress&cs=tinysrgb&w=800"; // Electrodomésticos de cocina
-const teamWorking = "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"; // Equipo trabajando
-const technician1 = "https://images.pexels.com/photos/8961242/pexels-photo-8961242.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 1
-const technician2 = "https://images.pexels.com/photos/5710881/pexels-photo-5710881.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 2
-const technician3 = "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 3
 const technician4 = "https://images.pexels.com/photos/8961159/pexels-photo-8961159.jpeg?auto=compress&cs=tinysrgb&w=800"; // Técnico profesional 4
 
 
