@@ -50,7 +50,11 @@ const data = [
   },
   // Aires acondicionados (categoría: "aires") - 4 proyectos
   {
-    image: images.airConditioner,
+    image: images.AireAcondicionado_1_1,
+    image2: images.AireAcondicionado_1_2,
+    image3: images.AireAcondicionado_1_3,
+    image4: images.AireAcondicionado_1_4,
+    image5: images.AireAcondicionado_1_5,
     title: "Suministro e Instalación De Aire Acondicionado",
     text: <div>
         <p>
@@ -204,6 +208,8 @@ const Projects = () => {
                 image={item.image} 
                 image2={item.image2}
                 image3={item.image3} 
+                image4={item.image4}
+                image5={item.image5}
                 title={item.title} 
                 text={item.text} 
                 category={item.category} 

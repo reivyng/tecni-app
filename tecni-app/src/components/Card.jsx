@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Card = ({ image, image2,image3, title, text, category }) => {
+const Card = ({ image, image2,image3, image4, image5, title, text, category }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [showZoom, setShowZoom] = useState(false);
@@ -9,7 +9,9 @@ const Card = ({ image, image2,image3, title, text, category }) => {
   const images = [image];
   if (image2) images.push(image2);
   if (image3) images.push(image3);
-  
+  if (image4) images.push(image4);
+  if (image5) images.push(image5);
+
   // Mapeo de categorías a etiquetas en español
   const categoryLabels = {
     'aires': 'Aire Acondicionado',
@@ -49,7 +51,7 @@ const Card = ({ image, image2,image3, title, text, category }) => {
       <div className="flex flex-col md:flex-row bg-[#203363] text-white p-6 rounded-xl shadow-lg max-w-3xl mx-auto gap-14">
         {/* Carrusel de imágenes */}
         <div 
-          className="relative"
+          className="relative self-center" // Añadido self-center para centrado vertical
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
