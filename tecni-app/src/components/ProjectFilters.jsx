@@ -5,10 +5,9 @@ import PropTypes from "prop-types";
 const ProjectFilters = ({ activeFilter, setActiveFilter }) => {
   const filters = [
     { id: "todos", label: "Todos los proyectos" },
+    { id: "refrigeracion", label: "Refrigeración Industrial" },
     { id: "aires", label: "Aires acondicionados" },
-    { id: "refrigeracion", label: "Refrigeración" },
-    { id: "lavadoras", label: "Lavadoras" },
-    { id: "paneles-solares", label: "Paneles solares" },
+    { id: "paneles-solares", label: "Sistema Eléctrico" },
     { id: "electrodomesticos", label: "Electrodomésticos" }
   ];
 

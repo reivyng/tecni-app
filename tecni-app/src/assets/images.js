@@ -16,10 +16,19 @@ import lavadora from './service/5.png';
 import rayo from './service/4.png';
 import flechaDerecha from './service/2.png';
 //carpeta de project
+
 import airConditioner from './Project/AireAcondicionado.png';
 import washingMachine from './Project/Lavadora.png';
 import solarPanels from './Project/Panel.png';
 
+import refrigerator_1_1 from './Project/Refrigeracion_1_1.jpg';
+import refrigerator_1_2 from './Project/Refrigeracion_1_2.jpg';
+
+import refrigerator_2_1 from './Project/Refrigeracion_2_1.jpg';
+import refrigerator_2_2 from './Project/Refrigeracion_2_2.jpg';
+
+
+//tecnicos
 
 // Imágenes gratuitas para uso comercial (URLs externas)
 
@@ -48,6 +57,11 @@ const images = {
     mantenimiento,
     termometro,
     copoDeNieve,
+    //imagenes de project
+    refrigerator_1_1,
+    refrigerator_1_2,
+    refrigerator_2_1,
+    refrigerator_2_2,
     lavadora,
     rayo,
     flechaDerecha,    // Nuevas imágenes gratuitas

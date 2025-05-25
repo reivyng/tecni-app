@@ -1,6 +1,12 @@
-const Card = ({ image, title, text, category }) => {
-  // Verificar si la imagen es una URL externa o un recurso local
-  const isExternalImage = typeof image === 'string' && (image.startsWith('http://') || image.startsWith('https://'));
+import { useState, useEffect } from "react";
+
+const Card = ({ image, image2, title, text, category }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  
+  // Crear un array de imágenes disponibles
+  const images = [image];
+  if (image2) images.push(image2);
   
   // Mapeo de categorías a etiquetas en español
   const categoryLabels = {
@@ -11,27 +17,85 @@ const Card = ({ image, title, text, category }) => {
     'electrodomesticos': 'Electrodomésticos'
   };
   
+  // Función para navegar a la siguiente imagen
+  const nextImage = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+  
+  // Función para navegar a la imagen anterior
+  const prevImage = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+  
+  // Efecto para avanzar automáticamente las imágenes
+  useEffect(() => {
+    // Solo crear el intervalo si hay más de una imagen y no está pausado
+    if (images.length > 1 && !isPaused) {
+      const interval = setInterval(() => {
+        nextImage();
+      }, 3000); // Cambiar cada 3 segundos
+      
+      return () => {
+        clearInterval(interval);
+      };
+    }
+  }, [currentImageIndex, isPaused, images.length]);
+  
   return (
-    <div className="flex flex-col md:flex-row bg-[#1F3A68] text-white p-6 rounded-xl shadow-lg max-w-3xl mx-auto gap-14">
-      {/* Imagen */}
-      <div className="relative">
-        {isExternalImage ? (
-          <img
-            src={image}
-            alt={title}
-            className="w-full md:w-48 h-48 object-cover rounded-lg"
-            loading="lazy"
-          />
-        ) : (
-          <img
-            src={image}
-            alt={title}
-            className="w-full md:w-48 h-48 object-cover rounded-lg"
-          />
+    <div className="flex flex-col md:flex-row bg-[#203363]  text-white p-6 rounded-xl shadow-lg max-w-3xl mx-auto gap-14">
+      {/* Carrusel de imágenes */}
+      <div 
+        className="relative"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <img
+          src={images[currentImageIndex]}
+          alt={title}
+          className="w-full md:w-48 h-70 object-cover rounded-lg"
+        />
+        
+        {/* Controles de carrusel - solo mostrar si hay más de una imagen */}
+        {images.length > 1 && (
+          <>
+            <button 
+              onClick={prevImage}
+              className="absolute top-1/2 left-1 transform -translate-y-1/2 bg-black bg-opacity-50 w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-opacity-70"
+              aria-label="Imagen anterior"
+            >
+              &#10094;
+            </button>
+            <button 
+              onClick={nextImage}
+              className="absolute top-1/2 right-1 transform -translate-y-1/2 bg-black bg-opacity-50 w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-opacity-70"
+              aria-label="Siguiente imagen"
+            >
+              &#10095;
+            </button>
+            
+            {/* Indicadores de imágenes */}
+            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1">
+              {images.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentImageIndex(idx);
+                  }}
+                  className={`w-2 h-2 rounded-full ${
+                    idx === currentImageIndex ? "bg-white" : "bg-white bg-opacity-50"
+                  }`}
+                  aria-label={`Ir a imagen ${idx + 1}`}
+                />
+              ))}
+            </div>
+          </>
         )}
         
         {category && (
-          <span className="absolute top-2 left-2 bg-blue-900/80 text-white text-xs px-2 py-1 rounded-full">
+          <span className="absolute top-2 left-2 bg-blue-700/80 text-white text-xs px-2 py-1 rounded-full">
             {categoryLabels[category] || category}
           </span>
         )}
@@ -46,11 +110,9 @@ const Card = ({ image, title, text, category }) => {
           </h2>
           <p className="mt-3 text-sm">{text}</p>
         </div>
-
       </div>
     </div>
   );
 };
 
 export default Card;
-  
