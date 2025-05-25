@@ -56,10 +56,11 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-base md:text-lg text-gray-700"
             >
-En TecniApp somos expertos en el diseño, instalación y mantenimiento de refrigeración industrial y comercial.  
-  Ofrecemos servicios especializados en cuartos fríos, salas de procesamiento de alimentos, plantas para producción de hielo, 
-  <strong> REFRIGERACIÓN CHILLER</strong>, <strong> SISTEMA DE CONGELACIÓN RACK</strong>, así como en el diseño y control de tableros eléctricos automatizados.  
-  Implementamos metodologías avanzadas y un enfoque llave en mano, asegurando soluciones eficientes, confiables y totalmente adaptadas a las necesidades de cada cliente.
+
+  En TecniApp nos especializamos en el diseño, instalación y mantenimiento en sistemas de refrigeración industrial y comercial.  
+  Ofrecemos soluciones en cuartos fríos, salas de procesamiento de alimentos, plantas de hielo, refrigeración <strong>“Chiller”</strong>, 
+  congelación <strong>“Rack”</strong> y tableros eléctricos automatizados.  
+  Garantizamos eficiencia, confiabilidad y soluciones adaptadas a las necesidades de cada cliente.
 </motion.p>
           </div>
           <div className="w-full max-w-lg mx-auto md:max-w-none h-[500px] flex items-center justify-center"> 
