@@ -51,28 +51,54 @@ const data = [
   // Aires acondicionados (categoría: "aires") - 4 proyectos
   {
     image: images.airConditioner,
-    title: "Instalación de aire acondicionado",
-    text: "Instalación completa de sistema de climatización en residencia familiar, incluyendo montaje de unidades interior y exterior, conexión de tuberías de refrigerante, cableado eléctrico y configuración del sistema. El cliente ahora disfruta de un ambiente perfectamente climatizado con un equipo de bajo consumo energético.",
-    category: "aires"
-  },
-  {
-    image: images.airConditioner,
-    title: "Reemplazo y actualización de sistema de ductos",
-    text: "Renovación completa del sistema de conductos de aire acondicionado en centro comercial. Se sustituyeron conductos deteriorados, se optimizó el diseño para mejorar el flujo de aire, se instalaron difusores modernos y se implementó aislamiento térmico de alta eficiencia, logrando un 30% de ahorro energético.",
+    title: "Suministro e Instalación De Aire Acondicionado",
+    text: <div>
+        <p>
+          En TECNIAPP ofrecemos soluciones completas en climatización, adaptadas a las necesidades de hogares, comercios e industrias.
+        </p>
+        <p className="mt-2 font-semibold">Nuestros servicios incluyen:</p>
+        <ul className="list-disc pl-5 my-2">
+          <li>Suministro de equipos de aire acondicionado con tecnología de alta eficiencia energética.</li>
+          <li>Instalación profesional, cumpliendo con los más altos estándares de calidad y seguridad.</li>
+          <li>Mantenimiento preventivo y correctivo, garantizando el rendimiento óptimo y la durabilidad de los sistemas.</li>
+        </ul>
+        <p className="mt-2 font-semibold">Comprometidos con:</p>
+        <ul className="list-disc pl-5 my-2">
+          <li>La eficiencia energética</li>
+          <li>El confort ambiental</li>
+          <li>Un respaldo técnico especializado</li>
+        </ul>
+        <p>
+          Confía en nuestro equipo técnico certificado y experimentado para asegurar el mejor desempeño de tus sistemas de climatización.
+        </p>
+      </div>
+    
+    ,
     category: "aires"
   },
 
   // Sistema Eléctrico/Paneles solares (categoría: "paneles-solares") - 3 proyectos
+
   {
     image: images.solarPanels,
-    title: "Instalación de sistema de paneles solares residencial 5kW",
-    text: "Implementación de sistema fotovoltaico completo que incluye 15 paneles solares, inversor, baterías de almacenamiento y sistema de monitoreo inteligente. El proyecto abarcó desde el estudio inicial de viabilidad, diseño personalizado, obtención de permisos, hasta la instalación y configuración final. El cliente ha reducido su factura eléctrica en un 85% y contribuye positivamente al medio ambiente.",
-    category: "paneles-solares"
-  },
-  {
-    image: images.solarPanels,
-    title: "Diseño e instalación de tablero eléctrico automatizado",
-    text: "Desarrollo de sistema de control automatizado para planta procesadora de alimentos. El proyecto incluyó diseño eléctrico, programación PLC, implementación de HMI táctil y configuración de alarmas. El sistema permite monitoreo en tiempo real, control preciso de temperaturas y generación automática de informes.",
+    title: "Diseño y Fabricación de Tableros Eléctricos y Electrónicos Automatizados",
+    text: <div>
+        <p>
+          En TECNIAPP diseñamos, fabricamos e instalamos tableros eléctricos y electrónicos personalizados para automatización industrial y comercial, adaptados a las necesidades específicas de cada proyecto.
+        </p>
+        <p className="mt-2 font-semibold">Nuestros servicios incluyen:</p>
+        <ul className="list-disc pl-5 my-2">
+          <li>Diseño de tableros con componentes de alta calidad, cumpliendo normativas y estándares eléctricos nacionales e internacionales.</li>
+          <li>Programación y configuración de sistemas de control automatizado para optimizar procesos y mejorar la eficiencia operativa.</li>
+          <li>Integración de sensores, PLCs, variadores de frecuencia y otros dispositivos para soluciones inteligentes.</li>
+          <li>Pruebas y puesta en marcha garantizando seguridad, funcionalidad y rendimiento.</li>
+          <li>Mantenimiento preventivo y correctivo de tableros para prolongar su vida útil y evitar fallas.</li>
+        </ul>
+        <p>
+          Confía en nuestro equipo técnico certificado y experimentado para asegurar el mejor desempeño de tus sistemas eléctricos y de automatización.
+        </p>
+      </div>
+    ,
     category: "paneles-solares"
   },
 
