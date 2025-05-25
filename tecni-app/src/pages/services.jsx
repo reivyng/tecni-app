@@ -1,8 +1,10 @@
-import React from "react";
 import images from "../assets/images";
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 console.log('Imágenes disponibles:', images); // Agrega esto para debuggear
+
 
 const ServiceCard = ({ title, description, icon, alt, index }) => {
   return (
@@ -28,43 +30,58 @@ const ServiceCard = ({ title, description, icon, alt, index }) => {
       </div>
       <p className="text-black text-lg md:text-xl mb-4">
         {description}
-      </p>
-      <div className="flex justify-end items-center">
-        <motion.img
-          src={images.flechaDerecha}
-          alt="Flecha"
-          className="w-8 h-8"
-          whileHover={{ x: 10 }}
-          transition={{ duration: 0.3 }}
-        />
+      </p>      <div className="flex justify-end items-center">
+        <Link to="/contact" className="flex items-center text-blue-600 hover:text-blue-800">
+          <span className="mr-2 font-medium">Solicitar servicio</span>
+          <motion.img
+            src={images.flechaDerecha}
+            alt="Flecha"
+            className="w-8 h-8"
+            whileHover={{ x: 10 }}
+            transition={{ duration: 0.3 }}
+          />
+        </Link>
       </div>
     </motion.div>
   );
 };
 
-const ContenedorServicios = () => {
-  const services = [
+ServiceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+};
+
+const ContenedorServicios = () => {  const services = [
     {
       title: "Aires acondicionados",
-      description: "Servicio completo de instalación, reparación y mantenimiento preventivo de sistemas de aire acondicionado residenciales y comerciales.",
+      description: "Servicio completo de instalación, reparación y mantenimiento preventivo de sistemas de aire acondicionado residenciales y comerciales. Trabajamos con todas las marcas y ofrecemos garantía en repuestos y mano de obra.",
       icon: images.termometro,
       alt: "Ícono de termómetro"
     },
     {
       title: "Refrigeración",
-      description: "Mantenimiento especializado de neveras, freezers y equipos de refrigeración comercial. Reparación de todas las marcas.",
+      description: "Mantenimiento especializado de neveras, freezers y equipos de refrigeración comercial. Diagnóstico completo, reparación y optimización energética. Servicio técnico para todas las marcas con garantía certificada.",
       icon: images.copoDeNieve,
       alt: "Ícono de copo de nieve"
     },
     {
       title: "Lavadoras",
-      description: "Diagnóstico y reparación de lavadoras automáticas. Servicio técnico autorizado para las principales marcas del mercado.",
+      description: "Diagnóstico y reparación de lavadoras automáticas. Atendemos fallas en sistemas de carga, desagüe, electrónica y motores. Servicio técnico autorizado para las principales marcas del mercado con repuestos originales.",
       icon: images.lavadora,
       alt: "Ícono de lavadora"
     },
     {
+      title: "Paneles Solares",
+      description: "Instalación de sistemas fotovoltaicos residenciales y comerciales. Ofrecemos asesoría, diseño personalizado, instalación y mantenimiento de paneles solares. Soluciones que reducen costos energéticos a largo plazo y contribuyen al medio ambiente.",
+      icon: images.solarPanels,
+      alt: "Ícono de panel solar"
+    },
+    {
       title: "Electrodomésticos",
-      description: "Reparación de pequeños y grandes electrodomésticos. Servicio a domicilio con garantía en todas nuestras reparaciones.",
+      description: "Reparación de pequeños y grandes electrodomésticos. Servicio a domicilio con diagnóstico preciso, reparación efectiva y garantía en todas nuestras intervenciones. Soporte técnico para equipos de todas las marcas.",
       icon: images.rayo,
       alt: "Ícono de rayo"
     }

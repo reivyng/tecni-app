@@ -12,10 +12,10 @@ import Contact from './pages/contact';
 import About from './pages/about';
 import Services from './pages/services';
 import Projects from './pages/projects';
-import NavBar from './components/Nav';
+import NavBar from './components/nav';
+import WhatsAppButton from './components/WhatsAppButton';
 
-const App = () => (
-  <Router>
+const App = () => (  <Router>
     <div>
       <NavBar />
       <Routes>
@@ -25,6 +25,12 @@ const App = () => (
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      
+      {/* Botón flotante de WhatsApp disponible en todas las páginas */}
+      <WhatsAppButton 
+        phoneNumber="+573102944906"
+        message="¡Hola! Estoy visitando la página web de TECNIApp y me gustaría obtener más información sobre sus servicios."
+      />
       
       <Footer />
     </div>
