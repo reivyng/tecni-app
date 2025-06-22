@@ -8,6 +8,8 @@ import publicidad5 from './publicidad/5.png';
 import logoBlanco from './logoBlanco.png'
 import llave from './llaveGris.png';
 
+import whatsappIcon from'./whatsapp.png'; // Importación para evitar errores de Webpack
+
 //carpeta de servicios
 import mantenimiento from './service/1.png';
 import termometro from './service/6.png';
@@ -98,7 +100,8 @@ const images = {
     technician1,
     technician2,
     technician3,
-    
+
+    whatsappIcon,    
 };
 
 export default images;

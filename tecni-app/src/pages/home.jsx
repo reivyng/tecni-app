@@ -81,9 +81,11 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-6 text-center"
+          className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-6 text-center flex items-center justify-center gap-2"
         >
-          ¿Quieres saber cómo lo hacemos?
+          <span role="img" aria-label="apreton de manos">🤝</span>
+          ¿Cómo trabajamos contigo?
+          <span role="img" aria-label="apreton de manos">🤝</span>
         </motion.h2>
         
         <div className="flex flex-col lg:flex-row gap-4 items-center">
@@ -91,34 +93,40 @@ const Home = () => {
             whileHover={{ scale: 1.02, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.5)" }}
             className="w-full lg:w-2/3 p-6 md:p-8 bg-[#A4B6CE] rounded-2xl shadow-lg border border-gray-100"
           >
-            <ul className="grid grid-cols-1 gap-4 md:gap-6">
-              {[
-                "Modelamos tu proyecto",
-                "Realizamos análisis energético",
-                "Análisis de interferencias entre instalaciones",
-                "Cómputos y presupuesto",
-                "Coordinación de obra",
-                "Avances de obra en tiempo real",
-                "Opción de Gestión de mantenimiento"
-              ].map((item, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center space-x-3 text-left"
-                >
-                  <motion.div
-                    whileHover={{ scale: 1.2, color: "#1E3A8A" }}
-                    className="text-blue-600 flex-shrink-0"
-                  >
-                  ✓
-
-                  </motion.div>
-                  <span className="text-gray-700 font-medium">{item}</span>
-                </motion.li>
-              ))}
-            </ul>
+            <ol className="grid grid-cols-1 gap-4 md:gap-6 list-decimal list-inside text-gray-800 font-medium">
+              <li>       
+                  <strong>Nos cuentas tu necesidad</strong><br />
+                  💬 Por WhatsApp, llamada o formulario web. ¡Te escuchamos!  
+              </li>
+              <li>
+                <strong>Agendamos una visita técnica o virtual</strong><br />
+                📅 Evaluamos el problema y te damos opciones claras y realistas.
+              </li>
+              <li>
+                <strong>Realizamos un diagnóstico profesional</strong><br />
+                🔍 Identificamos la causa raíz, no solo los síntomas.
+              </li>
+              <li>
+                <strong>Cotizamos con precios justos y sin sorpresas</strong><br />
+                💲 Te explicamos cada punto y adaptamos el servicio a tu presupuesto.
+              </li>
+              <li>
+                <strong>Ejecutamos el mantenimiento o instalación</strong><br />
+                🛠 Con equipos y herramientas de alta calidad, bajo normas técnicas.
+              </li>
+              <li>
+                <strong>Te entregamos con garantía y respaldo</strong><br />
+                ✅ Tu tranquilidad es nuestra prioridad. Todo queda documentado.
+              </li>
+              <li>
+                <strong>Ofrecemos seguimiento y asesoría post-servicio</strong><br />
+                📞 ¿Dudas o mantenimiento a futuro? Siempre estaremos ahí.
+              </li>
+            </ol>
+            <div className="mt-6 text-center text-blue-900 font-bold text-lg">
+              TECNI-APP es tu aliado en refrigeración y climatización.<br />
+              <span role="img" aria-label="mensaje">📲</span> ¡Contáctanos y lo solucionamos ya!
+            </div>
           </motion.div>
 
           <motion.div 
