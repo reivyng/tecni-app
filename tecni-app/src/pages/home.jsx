@@ -169,7 +169,9 @@ const Home = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="max-w-6xl mx-auto mt-5 text-3xl text-gray-800"
         >
-          Considerada hoy en día un Consorcio que se destaca por su innovación y sigue creciendo en la industria del aire acondicionado y la refrigeración, cuenta con profesionales con más de 16 años de experiencia en el área de la climatización y refrigeración.
+          En TECNI-APP contamos con más de 16 años de experiencia brindando soluciones integrales en climatización, refrigeración y mantenimiento electromecánico.
+Hemos trabajado con clientes del sector residencial, comercial e industrial, destacándonos por la calidad técnica, la puntualidad y el uso de tecnología de última generación.
+Nuestro compromiso es ofrecer servicios confiables, duraderos y adaptados a cada necesidad.
         </motion.p>
       </motion.div>
 
