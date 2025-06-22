@@ -85,7 +85,7 @@ export const Footer = () => {
           </p>
           <button
                             onClick={() => {
-                                const whatsappURL = `https://wa.me/573102944906?text=${encodeURIComponent('Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?')}`;
+                                const whatsappURL = `https://wa.me/573173815567?text=${encodeURIComponent('Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?')}`;
                                 window.open(whatsappURL, '_blank');
                             }}
                             className="bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-600 transition-colors text-center flex items-center justify-center"

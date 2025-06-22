@@ -126,10 +126,13 @@ const ContenedorServicios = () => {
         "Capacitación básica para clientes o personal técnico.",
         "---",
         "🛒 Venta de Repuestos",
-        "Repuestos certificados: compresores, tarjetas, sensores, capacitores.",
-        "Gas refrigerante: R134a, R410a, R404a, R22 (uso controlado).",
-        "Filtros, válvulas, manómetros, herramientas y kits de reparación.",
-        "Entregas a domicilio en Neiva y envíos nacionales."
+        "Compresores: herméticos, semi herméticos, scroll, tornillo.",
+        "Condensadoras: cerradas o abiertas.",
+        "Evaporadores: congelación y conservación.",
+        "Paneles de poliuretano: 5, 10 o más cm de espesor.",
+        "Bocelería de alistamiento.",
+        "Puertas: abatibles y corredizas.",
+        "Accesorios de instalación: válvulas, filtros, presostatos, tubería, refrigerantes.",
       ],
       icon: images.mantenimiento,
       alt: "Ícono de asesoría técnica"

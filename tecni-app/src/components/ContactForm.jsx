@@ -212,7 +212,7 @@ const ContactForm = ({
                   <option value="Refrigeración">Refrigeración Comercial</option>
                   <option value="Lavadoras">Refrigeración Domestica</option>
                   <option value="Paneles Solares">Electricidad y Electrónica</option>
-                  <option value="Otros Electrodomésticos">Asesoría Técnica & Venta de Repuestos</option>                  
+                  <option value="Otros Electrodomésticos">Asesoría Técnica y Venta de Repuestos</option>                  
                   <option value="Otros Electrodomésticos">Planes de mantenimiento.</option>
                 </select>
               </div>
