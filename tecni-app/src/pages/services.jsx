@@ -29,7 +29,19 @@ const ServiceCard = ({ title, description, icon, alt, index }) => {
         </h3>
       </div>
       <p className="text-black text-lg md:text-xl mb-4">
-        {description}
+        {Array.isArray(description) ? (
+          <ul className="list-disc pl-5">
+            {description.map((item, idx) =>
+              item === "---" ? (
+                <li key={idx} className="list-none h-4 p-0 m-0"></li> // Salto de línea invisible
+              ) : (
+                <li key={idx}>{item}</li>
+              )
+            )}
+          </ul>
+        ) : (
+          description
+        )}
       </p>      <div className="flex justify-end items-center">
         <Link to="/contact" className="flex items-center text-blue-600 hover:text-blue-800">
           <span className="mr-2 font-medium">Solicitar servicio</span>
@@ -48,42 +60,79 @@ const ServiceCard = ({ title, description, icon, alt, index }) => {
 
 ServiceCard.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ]).isRequired,
   icon: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
 };
 
-const ContenedorServicios = () => {  const services = [
+const ContenedorServicios = () => {
+  const services = [
     {
-      title: "Aires acondicionados",
-      description: "Servicio completo de instalación, reparación y mantenimiento preventivo de sistemas de aire acondicionado residenciales y comerciales. Trabajamos con todas las marcas y ofrecemos garantía en repuestos y mano de obra.",
-      icon: images.termometro,
-      alt: "Ícono de termómetro"
-    },
-    {
-      title: "Refrigeración",
-      description: "Mantenimiento especializado de neveras, freezers y equipos de refrigeración comercial. Diagnóstico completo, reparación y optimización energética. Servicio técnico para todas las marcas con garantía certificada.",
+      title: "Refrigeración Industrial",
+      description: [
+        "Diseño y construcción de cuartos fríos (congelación y conservación): Estructura panelada, cálculo térmico, selección de equipos, puertas herméticas.",
+        "Instalación y reparación de plantas de hielo (escamas, bloques, tubos).",
+        "Diseño y montaje de sistemas de racks de refrigeración para múltiples cámaras.",
+        "Montaje de salas de procesamiento de alimentos con climatización controlada.",
+        "Mantenimiento preventivo y correctivo de sistemas industriales de refrigeración.",
+      ],
       icon: images.copoDeNieve,
       alt: "Ícono de copo de nieve"
     },
     {
-      title: "Lavadoras",
-      description: "Diagnóstico y reparación de lavadoras automáticas. Atendemos fallas en sistemas de carga, desagüe, electrónica y motores. Servicio técnico autorizado para las principales marcas del mercado con repuestos originales.",
-      icon: images.lavadora,
-      alt: "Ícono de lavadora"
+      title: "Refrigeración Comercial",
+      description: [
+        "Mantenimiento y reparación de vitrinas panorámicas, verticales y horizontales.",
+        "Instalación y diagnóstico de congeladores, neveras comerciales y conservadores.",
+        "Reparación y ajuste de granizadoras, botelleros, mesas frías y cavas.",
+        "Climatización para panaderías, tiendas, restaurantes y supermercados.",
+      ],
+      icon: images.copoDeNieve,
+      alt: "Ícono de copo de nieve"
+    },      
+    {
+      title: "Refrigeración Doméstica",
+      description: [
+        "Reparación de neveras, lavadoras y aires acondicionados.",
+        "Instalación y mantenimiento de aires acondicionados tipo mini split.",
+        "Revisión y cambio de tarjetas electrónicas, termostatos y ventiladores.",
+        "Recuperación de gas refrigerante y sellado de fugas.",
+      ],
+      icon: images.copoDeNieve,
+      alt: "Ícono de copo de nieve"
     },
     {
-      title: "Paneles Solares",
-      description: "Instalación de sistemas fotovoltaicos residenciales y comerciales. Ofrecemos asesoría, diseño personalizado, instalación y mantenimiento de paneles solares. Soluciones que reducen costos energéticos a largo plazo y contribuyen al medio ambiente.",
-      icon: images.solarPanels,
+      title: "Electricidad y Electrónica",
+      description: [
+        "Instalaciones eléctricas residenciales e industriales: \"Tableros, puntos eléctricos, tomas, iluminación y protección.\"",
+        "Reparación y ajuste de tableros, sensores, relés y controles: Sistemas de arranque, automatización, control de temperatura y más.",
+        "Diagnóstico de fallas eléctricas: Medición de voltaje, continuidad, cortocircuitos y sobrecargas.",
+        "Implementación de sistemas de respaldo: UPS, transferencias automáticas, banco de baterías y plantas eléctricas."
+      ],
+      icon: images.rayo,
       alt: "Ícono de panel solar"
     },
     {
-      title: "Electrodomésticos",
-      description: "Reparación de pequeños y grandes electrodomésticos. Servicio a domicilio con diagnóstico preciso, reparación efectiva y garantía en todas nuestras intervenciones. Soporte técnico para equipos de todas las marcas.",
-      icon: images.rayo,
-      alt: "Ícono de rayo"
+      title: "Asesoría Técnica & Venta de Repuestos",
+      description: [
+        "Planes de mantenimiento.",
+        "Asesoría Técnica Profesional",
+        "Soporte presencial y remoto para fallas técnicas.",
+        "Acompañamiento en montajes, diseños o mejoras.",
+        "Capacitación básica para clientes o personal técnico.",
+        "---",
+        "🛒 Venta de Repuestos",
+        "Repuestos certificados: compresores, tarjetas, sensores, capacitores.",
+        "Gas refrigerante: R134a, R410a, R404a, R22 (uso controlado).",
+        "Filtros, válvulas, manómetros, herramientas y kits de reparación.",
+        "Entregas a domicilio en Neiva y envíos nacionales."
+      ],
+      icon: images.mantenimiento,
+      alt: "Ícono de asesoría técnica"
     }
   ];
 

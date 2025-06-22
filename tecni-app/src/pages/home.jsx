@@ -225,35 +225,30 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              icon: images.termometro,
-              title: "Climatización Residencial",
-              description: "Soluciones personalizadas para hogares de cualquier tamaño, garantizando confort y eficiencia energética."
+              icon: images.copoDeNieve,
+              title: "Refrigeración Industrial",
+              description: "Soluciones integrales en frío para procesos industriales: diseño, instalación y mantenimiento de cuartos fríos, plantas de hielo y sistemas de racks."
             },
             {
               icon: images.copoDeNieve,
               title: "Refrigeración Comercial",
-              description: "Sistemas de refrigeración para negocios, restaurantes y establecimientos comerciales con estándares de calidad superior."
+              description: "Refrigeración confiable para negocios: vitrinas, congeladores, cámaras y climatización para comercios y restaurantes."
             },
             {
-              icon: images.mantenimiento,
-              title: "Mantenimiento Preventivo",
-              description: "Servicio regular para extender la vida útil de sus equipos y prevenir costosas reparaciones."
-            },
-            {
-              icon: images.lavadora,
-              title: "Reparación de Equipos",
-              description: "Diagnóstico preciso y reparación eficiente de todo tipo de sistemas de climatización y refrigeración."
+              icon: images.copoDeNieve,
+              title: "Refrigeración Doméstica",
+              description: "Tecnología y eficiencia para el hogar: reparación de neveras, lavadoras y aires acondicionados, instalación y mantenimiento."
             },
             {
               icon: images.rayo,
-              title: "Eficiencia Energética",
-              description: "Auditorías y soluciones para optimizar el consumo energético de sus sistemas de climatización."
+              title: "Electricidad y Electrónica",
+              description: "Instalaciones eléctricas seguras, automatización, diagnóstico y sistemas de respaldo para hogares y empresas."
             },
             {
-              icon: images.flechaDerecha,
-              title: "Instalación Profesional",
-              description: "Instalación de equipos con los más altos estándares técnicos y de seguridad."
-            }
+              icon: images.mantenimiento,
+              title: "Asesoría Técnica & Venta de Repuestos",
+              description: "Soporte técnico profesional y venta de repuestos certificados con entrega a domicilio y capacitación básica."
+            },
           ].map((service, index) => (
             <motion.div
               key={index}

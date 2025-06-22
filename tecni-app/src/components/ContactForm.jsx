@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { FaWhatsapp, FaTools, FaSolarPanel, FaSnowflake } from 'react-icons/fa';
 
 const ContactForm = ({ 
-  whatsappNumber = "573102944906", 
+  whatsappNumber = "573173815567", // Cambiado al nuevo número
   title = "Formulario de Contacto", 
   showSidebar = true, 
   customStyles = {} 
@@ -208,11 +208,12 @@ const ContactForm = ({
                   required
                 >
                   <option value="">Selecciona un servicio</option>
-                  <option value="Aire Acondicionado">Aire Acondicionado</option>
-                  <option value="Refrigeración">Refrigeración</option>
-                  <option value="Lavadoras">Lavadoras</option>
-                  <option value="Paneles Solares">Paneles Solares</option>
-                  <option value="Otros Electrodomésticos">Otros Electrodomésticos</option>
+                  <option value="Aire Acondicionado">Refrigeración Industrial</option>
+                  <option value="Refrigeración">Refrigeración Comercial</option>
+                  <option value="Lavadoras">Refrigeración Domestica</option>
+                  <option value="Paneles Solares">Electricidad y Electrónica</option>
+                  <option value="Otros Electrodomésticos">Asesoría Técnica & Venta de Repuestos</option>                  
+                  <option value="Otros Electrodomésticos">Planes de mantenimiento.</option>
                 </select>
               </div>
             </div>
