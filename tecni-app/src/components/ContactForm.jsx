@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { FaWhatsapp, FaTools, FaSolarPanel, FaSnowflake } from 'react-icons/fa';
 
 const ContactForm = ({ 
-  whatsappNumber = "573173815567", // Cambiado al nuevo número
+  whatsappNumber = "573135728336", // Cambiado al nuevo número
   title = "Formulario de Contacto", 
   showSidebar = true, 
   customStyles = {} 
