@@ -158,14 +158,14 @@ const Contact = () => {
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
                         <a 
-                            href="tel:+573102944906" 
+                            href="tel:+573135728336" 
                             className="bg-white text-[#203363] px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center flex items-center justify-center"
                         >
                             <FiPhone className="mr-2" /> Llamar
                         </a>
                         <button
                             onClick={() => {
-                                const whatsappURL = `https://wa.me/573102944906?text=${encodeURIComponent('Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?')}`;
+                                const whatsappURL = `https://wa.me/573135728336?text=${encodeURIComponent('Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?')}`;
                                 window.open(whatsappURL, '_blank');
                             }}
                             className="bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-600 transition-colors text-center flex items-center justify-center"
@@ -232,7 +232,7 @@ const Contact = () => {
                     </div>
                 </motion.div>                {/* Formulario de contacto */}
                 <ContactForm 
-                    whatsappNumber="573102944906"
+                    whatsappNumber="573135728336"
                     title="Formulario de Contacto" 
                     showSidebar={true}
                 />
