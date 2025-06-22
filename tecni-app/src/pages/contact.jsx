@@ -55,6 +55,7 @@ const Contact = () => {
                             <h3 className="text-xl font-semibold text-[#203363]">Teléfonos</h3>
                         </div>
                         <p className="text-gray-700 mb-2">Atención al cliente: +57 313 572 8336</p>
+                        <p className="text-gray-700 mb-2">Atención al cliente: +57 317 381 5567</p>
                         <p className="text-gray-700">Soporte técnico: +57 316 869 2497</p>
                         <div className="mt-4 pt-4 border-t border-gray-200">
                             <p className="text-sm text-gray-600">Respuesta inmediata en horario laboral</p>

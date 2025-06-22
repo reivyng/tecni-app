@@ -42,7 +42,7 @@ import TableroElectrico_1_4 from './Project/TableroElectrico_1_4.jpg';
 import TableroElectrico_1_5 from './Project/TableroElectrico_1_5.jpg';
 import TableroElectrico_1_6 from './Project/TableroElectrico_1_6.jpg';
 
-//tecnicos
+
 //Tecnicos
 import teamWorking from './teamWorking.jpg'; // Equipo trabajando
 import technician1 from './technician1.jpg'; // Técnico 1
