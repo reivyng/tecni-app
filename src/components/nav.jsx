@@ -121,8 +121,8 @@ const NavBar = () => {
                 313 5728336 
               </a>
               <span>-</span>
-              <a href="tel:316 8692497" className="text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300">
-                316 8692497
+              <a href="tel:3173815567" className="text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300">
+                3173815567
               </a>
             </div>
             <div className="flex space-x-8 text-lg">

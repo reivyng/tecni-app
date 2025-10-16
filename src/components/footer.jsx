@@ -32,7 +32,7 @@ export const Footer = () => {
           </div>
           <div className="flex items-center justify-center space-x-2 md:justify-start">
             <FaPhone className="text-lg text-white" />
-            <span>+57 3168692497</span>
+            <span>+57 3173815567</span>
           </div>
           <div className="flex items-center justify-center space-x-2 md:justify-start">
             <FaEnvelope className="text-lg text-white" />
