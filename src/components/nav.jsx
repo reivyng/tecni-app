@@ -51,9 +51,9 @@ const NavBar = () => {
               <span className="text-sm">313 5728336</span>
             </a>
             <span>-</span> 
-            <a href="tel:316 8692497" className="flex items-center text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300">
+            <a href="tel:3173815567" className="flex items-center text-[#203363] text-lg font-semibold px-2 py-1 rounded transition-colors duration-200 hover:bg-blue-300">
               <FaPhone className="mr-1" size={14} />
-              <span className="text-sm">316 8692497</span>
+              <span className="text-sm">3173815567</span>
             </a>
             <button 
               className="text-[#203363] focus:outline-none"
