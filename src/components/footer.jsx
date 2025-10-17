@@ -12,16 +12,19 @@ export const Footer = () => {
         {/* Logo y ubicación */}
         <div className="w-full text-center md:w-auto md:text-left">
           <Link to="/">
-            <img
-              className="w-48 mx-auto md:mx-0 transition-transform hover:scale-105 duration-300"
-              src={images.logoBlanco}
-              alt="logo tecni-app"
-            />
+            <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 inline-flex items-center justify-center relative">
+              <img
+                className="w-48 transition-transform hover:scale-105 duration-300 relative"
+                style={{ top: '-35px', left: '0px' }}
+                src={images.logoBlanco}
+                alt="logo tecni-app"
+              />
+            </div>
           </Link>
         </div>
 
         <div className="flex flex-col space-y-4 text-center md:text-left">
-          <h2 className="text-2xl font-semibold">Tecni-app</h2>
+          <h2 className="text-2xl font-semibold">Tecniapp</h2>
           <div className="flex items-center justify-center space-x-2 md:justify-start">
             <FaMapMarkerAlt className="text-lg text-white" />
             <span>Cra. 12 # 2E-22, Neiva, Huila</span>
